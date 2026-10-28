@@ -1,0 +1,17 @@
+{
+ "kode": "NL",
+ "nama": "Belanda",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 1300.0,
+ "pertumbuhan_pct": 1.2,
+ "inflasi_pct": 3.0,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 25.8,
+ "ppn_pct": 21.0,
+ "pajak_dividen_pct": 15.0,
+ "upah_min_bulanan_usd": 2860.0,
+ "populasi_juta": 18.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

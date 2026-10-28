@@ -1,0 +1,17 @@
+{
+ "kode": "VN",
+ "nama": "Vietnam",
+ "mata_uang": "VND",
+ "pdb_usd_miliar": 520.0,
+ "pertumbuhan_pct": 6.5,
+ "inflasi_pct": 3.5,
+ "bunga_acuan_pct": 4.5,
+ "kurs_per_usd": 26200.0,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 8.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 203.0,
+ "populasi_juta": 101.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

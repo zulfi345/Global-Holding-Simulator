@@ -1,0 +1,17 @@
+{
+ "kode": "US",
+ "nama": "Amerika Serikat",
+ "mata_uang": "USD",
+ "pdb_usd_miliar": 31000.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 3.0,
+ "bunga_acuan_pct": 3.75,
+ "kurs_per_usd": 1.0,
+ "pph_badan_pct": 21.0,
+ "ppn_pct": 0.0,
+ "pajak_dividen_pct": 30.0,
+ "upah_min_bulanan_usd": 1250.0,
+ "populasi_juta": 342.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

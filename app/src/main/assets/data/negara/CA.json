@@ -1,0 +1,17 @@
+{
+ "kode": "CA",
+ "nama": "Kanada",
+ "mata_uang": "CAD",
+ "pdb_usd_miliar": 2300.0,
+ "pertumbuhan_pct": 1.5,
+ "inflasi_pct": 2.2,
+ "bunga_acuan_pct": 2.25,
+ "kurs_per_usd": 1.38,
+ "pph_badan_pct": 26.5,
+ "ppn_pct": 5.0,
+ "pajak_dividen_pct": 25.0,
+ "upah_min_bulanan_usd": 2195.0,
+ "populasi_juta": 41.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,17 @@
+{
+ "kode": "JP",
+ "nama": "Jepang",
+ "mata_uang": "JPY",
+ "pdb_usd_miliar": 4400.0,
+ "pertumbuhan_pct": 0.7,
+ "inflasi_pct": 2.5,
+ "bunga_acuan_pct": 0.75,
+ "kurs_per_usd": 150.0,
+ "pph_badan_pct": 30.6,
+ "ppn_pct": 10.0,
+ "pajak_dividen_pct": 20.42,
+ "upah_min_bulanan_usd": 1290.0,
+ "populasi_juta": 123.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

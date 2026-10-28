@@ -1,0 +1,17 @@
+# MAP (file -> terhubung ke)
+- .github/workflows/build-apk.yml | build+uji di GitHub | memakai settings/build.gradle.kts
+- settings.gradle.kts, build.gradle.kts, gradle.properties | konfigurasi Gradle | -> app/build.gradle.kts
+- app/build.gradle.kts | dependensi (Compose BOM 2024.06.00, Kotlin 1.9.24, AGP 8.5.2, Gradle 8.7) | -> MainActivity
+- app/.../MainActivity.kt | layar awal | nanti memuat ui/*
+- data/src/negara.csv | sumber data negara (10 negara) | -> tools/gen_negara.py -> assets/data/negara/<kode>.json
+- tools/gen_negara.py | CSV->JSON + validasi | memakai data/src/negara.csv
+- Folder kosong siap isi: domain/engine, domain/usaha, domain/rival, data, ui, assets/data/{negara,usaha,rival,aset,meta}
+- data/Negara.kt | model data negara + dariJson | dipakai NegaraLoader, nanti engine pajak/kurs/makro
+- data/NegaraLoader.kt | baca assets/data/negara/*.json | memakai Negara.kt; dipanggil dari ui/
+- ui/TemaGame.kt | tema gelap teal+mint | membungkus semua layar
+- ui/RankingPdbScreen.kt | daftar negara urut PDB | memakai data/Negara; dipanggil MainActivity
+- MainActivity.kt | memuat negara via NegaraLoader lalu tampilkan RankingPdbScreen
+- domain/engine/MakroState.kt | state makro per negara | memakai data/Negara; dipakai MakroEngine
+- domain/engine/MakroEngine.kt | tick bulanan makro | memakai MakroState; diuji MakroEngineTest
+- test/.../MakroEngineTest.kt | uji deterministik, batas, mean reversion | memakai MakroEngine
+- domain/engine/KursEngine.kt | tick bulanan kurs per USD | memakai MakroState (lokal & AS); diuji KursEngineTest

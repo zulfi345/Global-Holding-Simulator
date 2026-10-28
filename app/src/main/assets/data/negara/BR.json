@@ -1,0 +1,17 @@
+{
+ "kode": "BR",
+ "nama": "Brasil",
+ "mata_uang": "BRL",
+ "pdb_usd_miliar": 2400.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 4.8,
+ "bunga_acuan_pct": 14.5,
+ "kurs_per_usd": 5.4,
+ "pph_badan_pct": 34.0,
+ "ppn_pct": 17.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 300.0,
+ "populasi_juta": 213.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,17 @@
+{
+ "kode": "TH",
+ "nama": "Thailand",
+ "mata_uang": "THB",
+ "pdb_usd_miliar": 560.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 0.5,
+ "bunga_acuan_pct": 1.25,
+ "kurs_per_usd": 32.5,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 7.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 330.0,
+ "populasi_juta": 66.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

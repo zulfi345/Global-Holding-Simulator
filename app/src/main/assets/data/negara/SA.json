@@ -1,0 +1,17 @@
+{
+ "kode": "SA",
+ "nama": "Arab Saudi",
+ "mata_uang": "SAR",
+ "pdb_usd_miliar": 1150.0,
+ "pertumbuhan_pct": 4.0,
+ "inflasi_pct": 2.0,
+ "bunga_acuan_pct": 4.25,
+ "kurs_per_usd": 3.75,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 15.0,
+ "pajak_dividen_pct": 5.0,
+ "upah_min_bulanan_usd": 1070.0,
+ "populasi_juta": 35.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

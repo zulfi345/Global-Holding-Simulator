@@ -1,0 +1,17 @@
+{
+ "kode": "ID",
+ "nama": "Indonesia",
+ "mata_uang": "IDR",
+ "pdb_usd_miliar": 1500.0,
+ "pertumbuhan_pct": 5.0,
+ "inflasi_pct": 2.5,
+ "bunga_acuan_pct": 4.75,
+ "kurs_per_usd": 17900.0,
+ "pph_badan_pct": 22.0,
+ "ppn_pct": 11.0,
+ "pajak_dividen_pct": 20.0,
+ "upah_min_bulanan_usd": 170.0,
+ "populasi_juta": 285.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

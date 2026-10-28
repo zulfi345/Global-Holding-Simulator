@@ -1,0 +1,17 @@
+{
+ "kode": "CH",
+ "nama": "Swiss",
+ "mata_uang": "CHF",
+ "pdb_usd_miliar": 1000.0,
+ "pertumbuhan_pct": 1.0,
+ "inflasi_pct": 0.2,
+ "bunga_acuan_pct": 0.0,
+ "kurs_per_usd": 0.8,
+ "pph_badan_pct": 14.6,
+ "ppn_pct": 8.1,
+ "pajak_dividen_pct": 35.0,
+ "upah_min_bulanan_usd": 4800.0,
+ "populasi_juta": 9.1,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

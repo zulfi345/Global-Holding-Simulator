@@ -1,0 +1,17 @@
+{
+ "kode": "FR",
+ "nama": "Prancis",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 3400.0,
+ "pertumbuhan_pct": 0.8,
+ "inflasi_pct": 1.2,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 25.8,
+ "ppn_pct": 20.0,
+ "pajak_dividen_pct": 25.0,
+ "upah_min_bulanan_usd": 2095.0,
+ "populasi_juta": 68.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

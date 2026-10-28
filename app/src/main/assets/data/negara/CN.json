@@ -1,0 +1,17 @@
+{
+ "kode": "CN",
+ "nama": "Tiongkok",
+ "mata_uang": "CNY",
+ "pdb_usd_miliar": 19500.0,
+ "pertumbuhan_pct": 4.5,
+ "inflasi_pct": 0.5,
+ "bunga_acuan_pct": 3.0,
+ "kurs_per_usd": 7.1,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 13.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 320.0,
+ "populasi_juta": 1408.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}
