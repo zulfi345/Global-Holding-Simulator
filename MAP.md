@@ -17,3 +17,8 @@
 - domain/engine/KursEngine.kt | tick bulanan kurs per USD | memakai MakroState (lokal & AS); diuji KursEngineTest
 - domain/engine/PajakEngine.kt | PPh badan, PPN neto, pajak dividen | memakai data/Negara (tarif); diuji PajakEngineTest; nanti dipakai LabaRugi
 - domain/engine/LabaRugi.kt | laba rugi (kotor, EBITDA, EBIT, pajak, bersih) | memakai PajakEngine; diuji LabaRugiEngineTest; nanti memberi laba bersih ke Neraca
+- domain/engine/Neraca.kt | neraca + cek seimbang | dipakai ArusKas; diuji NeracaTest; nanti menerima laba bersih dari LabaRugi
+- domain/engine/ArusKas.kt | arus kas dari 2 neraca + laba bersih + penyusutan | memakai Neraca; diuji ArusKasTest
+- domain/engine/Akuntansi.kt | tutup periode: neraca awal + laba -> neraca akhir + arus kas | memakai Neraca, ArusKas, LabaRugi; diuji AkuntansiTest
+- data/src/usaha.csv | sumber data 60 usaha (Lampiran A) | -> tools/gen_usaha.py -> assets/data/usaha/<id>.json
+- tools/gen_usaha.py | CSV->JSON usaha + validasi | memakai data/src/usaha.csv

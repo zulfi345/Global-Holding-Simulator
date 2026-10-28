@@ -1,0 +1,27 @@
+{
+ "id": 52,
+ "nama": "Rumah makan",
+ "kelompok": "H",
+ "arketipe": "ritel_jasa",
+ "modal_min_usd": 1200.0,
+ "hpp_pct": 35.0,
+ "biaya_operasi_pct": 40.0,
+ "penyusutan_pct": 3.0,
+ "pekerja_min": 3,
+ "izin": [
+  "izin usaha kecil",
+  "sertifikat higiene"
+ ],
+ "risiko": [
+  "harga bahan baku",
+  "lokasi sepi",
+  "reputasi"
+ ],
+ "kpi": [
+  "margin bersih",
+  "omzet per kursi",
+  "food cost"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

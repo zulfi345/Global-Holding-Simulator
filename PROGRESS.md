@@ -1,11 +1,11 @@
 # PROGRESS
-Terakhir: M-012 selesai | Berikut: M-013
+Terakhir: M-016 selesai | Berikut: M-017
 
 ## Aturan sesi
 1. Baca file ini lalu MAP.md saja. Detail realisme ada di PROMPT_MASTER.md (di ZIP_LENGKAP); baca bagian yang relevan HANYA jika perlu.
 2. Kerjakan mikro-tahap berikut sebanyak yang muat (300-800 token tiap tahap); berhenti SEBELUM token habis.
 3. Keluaran = kode + 1 baris status. Tanya dulu jika tidak jelas (maks 3 pertanyaan).
-4. Akhir sesi: centang tahap, perbarui MAP.md, kirim (a) UPDATE.zip = HANYA file baru/berubah dengan path folder utuh (pengguna menimpanya ke repo GitHub), (b) PAKET_LANJUT.zip baru (PROGRESS.md, MAP.md, file tahap berikut, LANJUT.txt). Jika ada file yang dihapus, tulis di PROGRESS.md baris 'HAPUS: path'. Jika pengguna mengunggah ZIP_LENGKAP, boleh kirim ZIP_LENGKAP baru.
+4. Akhir sesi: centang tahap, perbarui MAP.md, kirim (a) M-NNN.zip = proyek LENGKAP dari awal sampai tahap terbaru (NNN = tahap terakhir selesai; pengguna mengganti seluruh repo GitHub dengannya), (b) PAKET_LANJUT.zip baru (PROGRESS.md, MAP.md, file tahap berikut, LANJUT.txt). Jika ada file yang dihapus, tulis di PROGRESS.md baris 'HAPUS: path'.
 5. Build via GitHub Actions. Build gagal -> pengguna tempel log -> perbaiki dulu. Claude tidak bisa kompilasi: tulis Kotlin konservatif, tanpa dependensi baru tanpa dicatat.
 6. Data nyata: beri tanggal_data + perkiraan=true. Jangan mengarang angka presisi palsu.
 7. Jaga file ini <= 60 baris.
@@ -30,8 +30,12 @@ Terakhir: M-012 selesai | Berikut: M-013
 - [x] M-010 domain/engine/KursEngine.kt (PPP parsial + selisih bunga riil + risk-off; US/SA/AE terpatok) + test/.../KursEngineTest.kt (4 uji; belum dikompilasi)
 - [x] M-011 domain/engine/PajakEngine.kt (pphBadan + rugi fiskal 100% tanpa batas waktu, ppnNeto, pajakDividen) + PajakEngineTest (6 uji; belum dikompilasi). Belum: bea masuk/ekspor, pajak karbon/properti, insentif (perlu kolom data baru)
 - [x] M-012 domain/engine/LabaRugi.kt (LaporanLabaRugi + LabaRugiEngine.hitung; hpp bank = biaya dana) + LabaRugiEngineTest (3 uji; belum dikompilasi)
-- [ ] M-013 Akuntansi: Neraca.kt (kas, piutang, persediaan, aset tetap; utang usaha, utang bank; modal, laba ditahan; aset = liabilitas + ekuitas, fungsi cek seimbang) + uji | boleh sentuh: engine/Neraca.kt + test | 700
-- [ ] M-014 Akuntansi: ArusKas.kt (operasi/investasi/pendanaan) + uji | 700
+- [x] M-013 domain/engine/Neraca.kt (Neraca + seimbang/selisih, NeracaEngine.cekSeimbang) + NeracaTest (3 uji; belum dikompilasi; memakai org.junit)
+- [x] M-014 domain/engine/ArusKas.kt (arus kas tidak langsung dari 2 neraca; dividen & belanja modal diturunkan; cocokDenganKas) + ArusKasTest (2 uji; angka diverifikasi manual; belum dikompilasi)
+- [x] M-015 domain/engine/Akuntansi.kt (tutupPeriode: neraca awal + laba rugi -> neraca akhir + arus kas; kas turunan) + AkuntansiTest (2 uji; belum dikompilasi)
+- [x] M-016 data/src/usaha.csv (kolom: id,nama,kelompok,arketipe,modal_min_usd,hpp_pct,biaya_operasi_pct,penyusutan_pct,pekerja_min,izin;risiko;kpi dipisah ';',tanggal_data,perkiraan; baru 1 baris contoh id 52) + tools/gen_usaha.py (validasi id 1-60, persen 0-100)
+- [ ] M-017 usaha.csv kelompok A Tambang & Energi (id 1-9), perkiraan=true, angka kasar | 700
+- [ ] M-018 usaha.csv kelompok B Pertanian (id 10-16) | 700
 
 ## Bug diketahui
 (Build GitHub belum diuji sama sekali. Jika gagal, tempel log error.)
