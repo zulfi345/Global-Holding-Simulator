@@ -1,0 +1,27 @@
+{
+ "id": 55,
+ "nama": "Supermarket",
+ "kelompok": "H",
+ "arketipe": "ritel_jasa",
+ "modal_min_usd": 3000000.0,
+ "hpp_pct": 78.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 3.0,
+ "pekerja_min": 60,
+ "izin": [
+  "izin usaha",
+  "sertifikat higiene"
+ ],
+ "risiko": [
+  "margin tipis",
+  "susut persediaan",
+  "e-commerce"
+ ],
+ "kpi": [
+  "omzet per m2",
+  "perputaran persediaan",
+  "margin"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

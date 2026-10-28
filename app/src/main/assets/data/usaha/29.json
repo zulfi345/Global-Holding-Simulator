@@ -1,0 +1,27 @@
+{
+ "id": 29,
+ "nama": "Software/SaaS",
+ "kelompok": "D",
+ "arketipe": "teknologi",
+ "modal_min_usd": 500000.0,
+ "hpp_pct": 20.0,
+ "biaya_operasi_pct": 55.0,
+ "penyusutan_pct": 3.0,
+ "pekerja_min": 10,
+ "izin": [
+  "izin PSE",
+  "perlindungan data"
+ ],
+ "risiko": [
+  "churn pelanggan",
+  "talenta mahal",
+  "persaingan"
+ ],
+ "kpi": [
+  "ARR",
+  "churn",
+  "LTV per CAC"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

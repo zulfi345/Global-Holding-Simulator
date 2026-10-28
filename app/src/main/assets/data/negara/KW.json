@@ -1,0 +1,17 @@
+{
+ "kode": "KW",
+ "nama": "Kuwait",
+ "mata_uang": "KWD",
+ "pdb_usd_miliar": 165.0,
+ "pertumbuhan_pct": 2.5,
+ "inflasi_pct": 2.5,
+ "bunga_acuan_pct": 4.0,
+ "kurs_per_usd": 0.307,
+ "pph_badan_pct": 15.0,
+ "ppn_pct": 0.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 700.0,
+ "populasi_juta": 4.9,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

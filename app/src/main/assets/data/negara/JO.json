@@ -1,0 +1,17 @@
+{
+ "kode": "JO",
+ "nama": "Yordania",
+ "mata_uang": "JOD",
+ "pdb_usd_miliar": 55.0,
+ "pertumbuhan_pct": 2.5,
+ "inflasi_pct": 2.0,
+ "bunga_acuan_pct": 5.5,
+ "kurs_per_usd": 0.709,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 16.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 410.0,
+ "populasi_juta": 11.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

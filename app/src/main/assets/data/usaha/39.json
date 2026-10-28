@@ -1,0 +1,27 @@
+{
+ "id": 39,
+ "nama": "Multifinance & leasing",
+ "kelompok": "E",
+ "arketipe": "finansial",
+ "modal_min_usd": 15000000.0,
+ "hpp_pct": 40.0,
+ "biaya_operasi_pct": 25.0,
+ "penyusutan_pct": 1.0,
+ "pekerja_min": 60,
+ "izin": [
+  "izin multifinance OJK",
+  "batas gearing"
+ ],
+ "risiko": [
+  "kredit macet",
+  "kenaikan biaya dana",
+  "pelunasan dini"
+ ],
+ "kpi": [
+  "NPF",
+  "NIM",
+  "gearing"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

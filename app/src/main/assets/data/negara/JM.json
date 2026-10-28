@@ -1,0 +1,17 @@
+{
+ "kode": "JM",
+ "nama": "Jamaika",
+ "mata_uang": "JMD",
+ "pdb_usd_miliar": 22.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 4.5,
+ "bunga_acuan_pct": 5.75,
+ "kurs_per_usd": 158.0,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 15.0,
+ "pajak_dividen_pct": 25.0,
+ "upah_min_bulanan_usd": 465.0,
+ "populasi_juta": 2.8,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

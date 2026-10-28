@@ -1,0 +1,28 @@
+{
+ "id": 43,
+ "nama": "Maskapai",
+ "kelompok": "F",
+ "arketipe": "logistik",
+ "modal_min_usd": 80000000.0,
+ "hpp_pct": 65.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 8.0,
+ "pekerja_min": 500,
+ "izin": [
+  "AOC",
+  "izin rute",
+  "sertifikasi keselamatan"
+ ],
+ "risiko": [
+  "harga avtur",
+  "permintaan musiman",
+  "kurs"
+ ],
+ "kpi": [
+  "load factor",
+  "biaya per kursi-km",
+  "yield"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

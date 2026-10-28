@@ -1,0 +1,27 @@
+{
+ "id": 34,
+ "nama": "AI & keamanan siber",
+ "kelompok": "D",
+ "arketipe": "teknologi",
+ "modal_min_usd": 5000000.0,
+ "hpp_pct": 35.0,
+ "biaya_operasi_pct": 45.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 20,
+ "izin": [
+  "izin PSE",
+  "sertifikasi keamanan"
+ ],
+ "risiko": [
+  "biaya komputasi",
+  "talenta langka",
+  "regulasi AI"
+ ],
+ "kpi": [
+  "pendapatan berulang",
+  "churn",
+  "margin kotor"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

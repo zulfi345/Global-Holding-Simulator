@@ -1,0 +1,28 @@
+{
+ "id": 7,
+ "nama": "Tenaga surya (PLTS)",
+ "kelompok": "A",
+ "arketipe": "tambang_energi",
+ "modal_min_usd": 8000000.0,
+ "hpp_pct": 10.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 20.0,
+ "pekerja_min": 15,
+ "izin": [
+  "izin usaha ketenagalistrikan",
+  "PPA",
+  "lahan"
+ ],
+ "risiko": [
+  "cuaca",
+  "tarif PPA",
+  "harga panel"
+ ],
+ "kpi": [
+  "capacity factor",
+  "biaya per kWh",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

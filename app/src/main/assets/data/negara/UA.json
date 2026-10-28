@@ -1,0 +1,17 @@
+{
+ "kode": "UA",
+ "nama": "Ukraina",
+ "mata_uang": "UAH",
+ "pdb_usd_miliar": 220.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 8.0,
+ "bunga_acuan_pct": 15.5,
+ "kurs_per_usd": 41.5,
+ "pph_badan_pct": 18.0,
+ "ppn_pct": 20.0,
+ "pajak_dividen_pct": 18.0,
+ "upah_min_bulanan_usd": 190.0,
+ "populasi_juta": 38.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,27 @@
+{
+ "id": 50,
+ "nama": "Hotel & resort",
+ "kelompok": "G",
+ "arketipe": "ritel_jasa",
+ "modal_min_usd": 20000000.0,
+ "hpp_pct": 25.0,
+ "biaya_operasi_pct": 45.0,
+ "penyusutan_pct": 8.0,
+ "pekerja_min": 60,
+ "izin": [
+  "izin usaha pariwisata",
+  "sertifikat laik fungsi"
+ ],
+ "risiko": [
+  "musiman",
+  "okupansi",
+  "reputasi"
+ ],
+ "kpi": [
+  "okupansi",
+  "tarif rata-rata kamar",
+  "RevPAR"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

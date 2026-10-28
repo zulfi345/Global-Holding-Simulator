@@ -1,0 +1,17 @@
+{
+ "kode": "NG",
+ "nama": "Nigeria",
+ "mata_uang": "NGN",
+ "pdb_usd_miliar": 250.0,
+ "pertumbuhan_pct": 3.5,
+ "inflasi_pct": 20.0,
+ "bunga_acuan_pct": 27.0,
+ "kurs_per_usd": 1500.0,
+ "pph_badan_pct": 30.0,
+ "ppn_pct": 7.5,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 47.0,
+ "populasi_juta": 235.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

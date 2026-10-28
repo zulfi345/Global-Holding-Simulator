@@ -1,0 +1,27 @@
+{
+ "id": 46,
+ "nama": "Transportasi kota & ride-hailing",
+ "kelompok": "F",
+ "arketipe": "logistik",
+ "modal_min_usd": 4000000.0,
+ "hpp_pct": 65.0,
+ "biaya_operasi_pct": 20.0,
+ "penyusutan_pct": 3.0,
+ "pekerja_min": 25,
+ "izin": [
+  "izin angkutan",
+  "izin PSE"
+ ],
+ "risiko": [
+  "insentif mitra",
+  "regulasi tarif",
+  "persaingan"
+ ],
+ "kpi": [
+  "trip per hari",
+  "take rate",
+  "biaya akuisisi"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

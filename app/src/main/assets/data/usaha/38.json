@@ -1,0 +1,28 @@
+{
+ "id": 38,
+ "nama": "Asuransi umum",
+ "kelompok": "E",
+ "arketipe": "finansial",
+ "modal_min_usd": 20000000.0,
+ "hpp_pct": 60.0,
+ "biaya_operasi_pct": 28.0,
+ "penyusutan_pct": 1.0,
+ "pekerja_min": 60,
+ "izin": [
+  "izin asuransi OJK",
+  "modal minimum",
+  "rasio RBC"
+ ],
+ "risiko": [
+  "bencana",
+  "biaya reasuransi",
+  "harga premi"
+ ],
+ "kpi": [
+  "combined ratio",
+  "RBC",
+  "rasio klaim"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

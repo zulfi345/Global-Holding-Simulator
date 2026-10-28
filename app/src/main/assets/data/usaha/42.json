@@ -1,0 +1,27 @@
+{
+ "id": 42,
+ "nama": "Trucking",
+ "kelompok": "F",
+ "arketipe": "logistik",
+ "modal_min_usd": 1000000.0,
+ "hpp_pct": 60.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 8.0,
+ "pekerja_min": 20,
+ "izin": [
+  "izin angkutan barang",
+  "uji KIR"
+ ],
+ "risiko": [
+  "harga BBM",
+  "muatan balik kosong",
+  "aturan ODOL"
+ ],
+ "kpi": [
+  "utilisasi armada",
+  "biaya per km",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

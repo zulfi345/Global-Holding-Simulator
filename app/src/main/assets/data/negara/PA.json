@@ -1,0 +1,17 @@
+{
+ "kode": "PA",
+ "nama": "Panama",
+ "mata_uang": "USD",
+ "pdb_usd_miliar": 85.0,
+ "pertumbuhan_pct": 3.5,
+ "inflasi_pct": 1.0,
+ "bunga_acuan_pct": 4.0,
+ "kurs_per_usd": 1.0,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 7.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 660.0,
+ "populasi_juta": 4.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

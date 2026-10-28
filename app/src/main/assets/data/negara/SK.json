@@ -1,0 +1,17 @@
+{
+ "kode": "SK",
+ "nama": "Slovakia",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 150.0,
+ "pertumbuhan_pct": 1.8,
+ "inflasi_pct": 3.0,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 21.0,
+ "ppn_pct": 23.0,
+ "pajak_dividen_pct": 7.0,
+ "upah_min_bulanan_usd": 1050.0,
+ "populasi_juta": 5.4,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

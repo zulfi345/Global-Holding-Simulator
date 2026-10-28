@@ -1,0 +1,28 @@
+{
+ "id": 3,
+ "nama": "Emas",
+ "kelompok": "A",
+ "arketipe": "tambang_energi",
+ "modal_min_usd": 20000000.0,
+ "hpp_pct": 45.0,
+ "biaya_operasi_pct": 10.0,
+ "penyusutan_pct": 10.0,
+ "pekerja_min": 120,
+ "izin": [
+  "IUP",
+  "AMDAL",
+  "izin pengolahan"
+ ],
+ "risiko": [
+  "harga emas",
+  "kadar bijih",
+  "keselamatan kerja"
+ ],
+ "kpi": [
+  "biaya per oz",
+  "kadar bijih",
+  "umur cadangan"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

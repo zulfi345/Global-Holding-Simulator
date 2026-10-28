@@ -1,0 +1,17 @@
+{
+ "kode": "BD",
+ "nama": "Bangladesh",
+ "mata_uang": "BDT",
+ "pdb_usd_miliar": 480.0,
+ "pertumbuhan_pct": 4.5,
+ "inflasi_pct": 8.5,
+ "bunga_acuan_pct": 10.0,
+ "kurs_per_usd": 122.0,
+ "pph_badan_pct": 27.5,
+ "ppn_pct": 15.0,
+ "pajak_dividen_pct": 20.0,
+ "upah_min_bulanan_usd": 100.0,
+ "populasi_juta": 175.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

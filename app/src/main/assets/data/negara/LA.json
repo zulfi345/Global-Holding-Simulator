@@ -1,0 +1,17 @@
+{
+ "kode": "LA",
+ "nama": "Laos",
+ "mata_uang": "LAK",
+ "pdb_usd_miliar": 15.0,
+ "pertumbuhan_pct": 4.0,
+ "inflasi_pct": 10.0,
+ "bunga_acuan_pct": 10.0,
+ "kurs_per_usd": 21700.0,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 10.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 75.0,
+ "populasi_juta": 7.7,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

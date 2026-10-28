@@ -1,0 +1,17 @@
+{
+ "kode": "DK",
+ "nama": "Denmark",
+ "mata_uang": "DKK",
+ "pdb_usd_miliar": 450.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 1.8,
+ "bunga_acuan_pct": 1.6,
+ "kurs_per_usd": 6.5,
+ "pph_badan_pct": 22.0,
+ "ppn_pct": 25.0,
+ "pajak_dividen_pct": 27.0,
+ "upah_min_bulanan_usd": 3800.0,
+ "populasi_juta": 6.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

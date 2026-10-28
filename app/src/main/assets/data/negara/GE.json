@@ -1,0 +1,17 @@
+{
+ "kode": "GE",
+ "nama": "Georgia",
+ "mata_uang": "GEL",
+ "pdb_usd_miliar": 40.0,
+ "pertumbuhan_pct": 6.0,
+ "inflasi_pct": 3.5,
+ "bunga_acuan_pct": 8.0,
+ "kurs_per_usd": 2.7,
+ "pph_badan_pct": 15.0,
+ "ppn_pct": 18.0,
+ "pajak_dividen_pct": 5.0,
+ "upah_min_bulanan_usd": 150.0,
+ "populasi_juta": 3.7,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

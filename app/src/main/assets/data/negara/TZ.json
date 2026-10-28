@@ -1,0 +1,17 @@
+{
+ "kode": "TZ",
+ "nama": "Tanzania",
+ "mata_uang": "TZS",
+ "pdb_usd_miliar": 85.0,
+ "pertumbuhan_pct": 6.0,
+ "inflasi_pct": 3.3,
+ "bunga_acuan_pct": 5.75,
+ "kurs_per_usd": 2550.0,
+ "pph_badan_pct": 30.0,
+ "ppn_pct": 18.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 100.0,
+ "populasi_juta": 68.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,27 @@
+{
+ "id": 14,
+ "nama": "Perikanan & budidaya udang",
+ "kelompok": "B",
+ "arketipe": "pertanian",
+ "modal_min_usd": 500000.0,
+ "hpp_pct": 55.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 7.0,
+ "pekerja_min": 15,
+ "izin": [
+  "izin budidaya",
+  "sertifikasi budidaya"
+ ],
+ "risiko": [
+  "penyakit udang",
+  "kualitas air",
+  "harga ekspor"
+ ],
+ "kpi": [
+  "rasio konversi pakan",
+  "tingkat hidup",
+  "biaya per kg"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

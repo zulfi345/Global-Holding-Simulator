@@ -1,0 +1,17 @@
+{
+ "kode": "PY",
+ "nama": "Paraguay",
+ "mata_uang": "PYG",
+ "pdb_usd_miliar": 52.0,
+ "pertumbuhan_pct": 4.0,
+ "inflasi_pct": 3.5,
+ "bunga_acuan_pct": 6.0,
+ "kurs_per_usd": 7900.0,
+ "pph_badan_pct": 10.0,
+ "ppn_pct": 10.0,
+ "pajak_dividen_pct": 8.0,
+ "upah_min_bulanan_usd": 370.0,
+ "populasi_juta": 6.9,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

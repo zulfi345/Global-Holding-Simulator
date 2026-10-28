@@ -1,0 +1,27 @@
+{
+ "id": 44,
+ "nama": "Pergudangan & cold chain",
+ "kelompok": "F",
+ "arketipe": "logistik",
+ "modal_min_usd": 5000000.0,
+ "hpp_pct": 35.0,
+ "biaya_operasi_pct": 30.0,
+ "penyusutan_pct": 10.0,
+ "pekerja_min": 30,
+ "izin": [
+  "izin gudang",
+  "sertifikasi rantai dingin"
+ ],
+ "risiko": [
+  "biaya listrik",
+  "okupansi",
+  "kerusakan barang"
+ ],
+ "kpi": [
+  "okupansi",
+  "biaya per pallet",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

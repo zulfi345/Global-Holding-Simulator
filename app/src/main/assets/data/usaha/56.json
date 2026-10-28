@@ -1,0 +1,28 @@
+{
+ "id": 56,
+ "nama": "Rumah sakit & klinik",
+ "kelompok": "H",
+ "arketipe": "layanan_regulasi",
+ "modal_min_usd": 20000000.0,
+ "hpp_pct": 30.0,
+ "biaya_operasi_pct": 50.0,
+ "penyusutan_pct": 6.0,
+ "pekerja_min": 200,
+ "izin": [
+  "izin rumah sakit",
+  "akreditasi",
+  "izin tenaga medis"
+ ],
+ "risiko": [
+  "tarif BPJS",
+  "kekurangan tenaga medis",
+  "malpraktik"
+ ],
+ "kpi": [
+  "tingkat hunian",
+  "pendapatan per pasien",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

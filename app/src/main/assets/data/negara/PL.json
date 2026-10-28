@@ -1,0 +1,17 @@
+{
+ "kode": "PL",
+ "nama": "Polandia",
+ "mata_uang": "PLN",
+ "pdb_usd_miliar": 1000.0,
+ "pertumbuhan_pct": 3.2,
+ "inflasi_pct": 3.0,
+ "bunga_acuan_pct": 4.0,
+ "kurs_per_usd": 3.7,
+ "pph_badan_pct": 19.0,
+ "ppn_pct": 23.0,
+ "pajak_dividen_pct": 19.0,
+ "upah_min_bulanan_usd": 1300.0,
+ "populasi_juta": 37.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

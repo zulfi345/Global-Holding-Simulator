@@ -1,0 +1,27 @@
+{
+ "id": 45,
+ "nama": "Kurir & last-mile",
+ "kelompok": "F",
+ "arketipe": "logistik",
+ "modal_min_usd": 3000000.0,
+ "hpp_pct": 60.0,
+ "biaya_operasi_pct": 20.0,
+ "penyusutan_pct": 5.0,
+ "pekerja_min": 80,
+ "izin": [
+  "izin pos",
+  "izin angkutan"
+ ],
+ "risiko": [
+  "perang tarif",
+  "biaya BBM",
+  "upah kurir"
+ ],
+ "kpi": [
+  "biaya per paket",
+  "ketepatan kirim",
+  "volume"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,17 @@
+{
+ "kode": "FI",
+ "nama": "Finlandia",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 310.0,
+ "pertumbuhan_pct": 1.0,
+ "inflasi_pct": 1.8,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 25.5,
+ "pajak_dividen_pct": 35.0,
+ "upah_min_bulanan_usd": 2800.0,
+ "populasi_juta": 5.6,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

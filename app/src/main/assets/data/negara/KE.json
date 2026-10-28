@@ -1,0 +1,17 @@
+{
+ "kode": "KE",
+ "nama": "Kenya",
+ "mata_uang": "KES",
+ "pdb_usd_miliar": 120.0,
+ "pertumbuhan_pct": 5.0,
+ "inflasi_pct": 4.5,
+ "bunga_acuan_pct": 9.0,
+ "kurs_per_usd": 129.0,
+ "pph_badan_pct": 30.0,
+ "ppn_pct": 16.0,
+ "pajak_dividen_pct": 15.0,
+ "upah_min_bulanan_usd": 125.0,
+ "populasi_juta": 56.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

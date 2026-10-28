@@ -1,0 +1,17 @@
+{
+ "kode": "CO",
+ "nama": "Kolombia",
+ "mata_uang": "COP",
+ "pdb_usd_miliar": 430.0,
+ "pertumbuhan_pct": 2.5,
+ "inflasi_pct": 4.5,
+ "bunga_acuan_pct": 8.5,
+ "kurs_per_usd": 4000.0,
+ "pph_badan_pct": 35.0,
+ "ppn_pct": 19.0,
+ "pajak_dividen_pct": 20.0,
+ "upah_min_bulanan_usd": 480.0,
+ "populasi_juta": 52.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

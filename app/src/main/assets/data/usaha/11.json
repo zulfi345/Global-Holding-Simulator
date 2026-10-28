@@ -1,0 +1,27 @@
+{
+ "id": 11,
+ "nama": "Padi & pangan pokok",
+ "kelompok": "B",
+ "arketipe": "pertanian",
+ "modal_min_usd": 150000.0,
+ "hpp_pct": 55.0,
+ "biaya_operasi_pct": 20.0,
+ "penyusutan_pct": 5.0,
+ "pekerja_min": 5,
+ "izin": [
+  "izin lahan",
+  "program subsidi"
+ ],
+ "risiko": [
+  "gagal panen",
+  "harga pembelian pemerintah",
+  "banjir"
+ ],
+ "kpi": [
+  "hasil per ha",
+  "biaya per ton",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

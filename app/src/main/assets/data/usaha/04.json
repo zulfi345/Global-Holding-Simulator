@@ -1,0 +1,28 @@
+{
+ "id": 4,
+ "nama": "Tembaga",
+ "kelompok": "A",
+ "arketipe": "tambang_energi",
+ "modal_min_usd": 40000000.0,
+ "hpp_pct": 50.0,
+ "biaya_operasi_pct": 10.0,
+ "penyusutan_pct": 10.0,
+ "pekerja_min": 250,
+ "izin": [
+  "IUP",
+  "AMDAL",
+  "izin smelter"
+ ],
+ "risiko": [
+  "harga tembaga",
+  "kadar bijih",
+  "listrik dan air"
+ ],
+ "kpi": [
+  "biaya per ton",
+  "recovery",
+  "umur cadangan"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

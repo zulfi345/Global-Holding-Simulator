@@ -1,0 +1,17 @@
+{
+ "kode": "AO",
+ "nama": "Angola",
+ "mata_uang": "AOA",
+ "pdb_usd_miliar": 120.0,
+ "pertumbuhan_pct": 3.0,
+ "inflasi_pct": 20.0,
+ "bunga_acuan_pct": 19.5,
+ "kurs_per_usd": 920.0,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 14.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 75.0,
+ "populasi_juta": 38.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

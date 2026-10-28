@@ -1,0 +1,17 @@
+{
+ "kode": "IQ",
+ "nama": "Irak",
+ "mata_uang": "IQD",
+ "pdb_usd_miliar": 280.0,
+ "pertumbuhan_pct": 3.0,
+ "inflasi_pct": 2.5,
+ "bunga_acuan_pct": 5.5,
+ "kurs_per_usd": 1310.0,
+ "pph_badan_pct": 15.0,
+ "ppn_pct": 0.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 270.0,
+ "populasi_juta": 46.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

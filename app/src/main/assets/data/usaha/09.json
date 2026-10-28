@@ -1,0 +1,28 @@
+{
+ "id": 9,
+ "nama": "Panas bumi",
+ "kelompok": "A",
+ "arketipe": "tambang_energi",
+ "modal_min_usd": 30000000.0,
+ "hpp_pct": 15.0,
+ "biaya_operasi_pct": 20.0,
+ "penyusutan_pct": 15.0,
+ "pekerja_min": 40,
+ "izin": [
+  "izin panas bumi",
+  "PPA",
+  "izin kawasan hutan"
+ ],
+ "risiko": [
+  "eksplorasi gagal",
+  "penurunan uap",
+  "tarif PPA"
+ ],
+ "kpi": [
+  "capacity factor",
+  "biaya per kWh",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

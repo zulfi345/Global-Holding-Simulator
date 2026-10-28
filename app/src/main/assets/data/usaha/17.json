@@ -1,0 +1,28 @@
+{
+ "id": 17,
+ "nama": "Baja",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 60000000.0,
+ "hpp_pct": 75.0,
+ "biaya_operasi_pct": 8.0,
+ "penyusutan_pct": 5.0,
+ "pekerja_min": 300,
+ "izin": [
+  "izin industri",
+  "AMDAL",
+  "SNI"
+ ],
+ "risiko": [
+  "harga bijih besi",
+  "impor murah",
+  "biaya listrik"
+ ],
+ "kpi": [
+  "utilisasi",
+  "biaya per ton",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

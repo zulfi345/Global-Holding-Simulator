@@ -1,0 +1,28 @@
+{
+ "id": 53,
+ "nama": "Kafe & waralaba",
+ "kelompok": "H",
+ "arketipe": "ritel_jasa",
+ "modal_min_usd": 60000.0,
+ "hpp_pct": 30.0,
+ "biaya_operasi_pct": 45.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 5,
+ "izin": [
+  "izin usaha",
+  "sertifikat higiene",
+  "kontrak waralaba"
+ ],
+ "risiko": [
+  "sewa naik",
+  "lokasi",
+  "tren konsumen"
+ ],
+ "kpi": [
+  "omzet per outlet",
+  "food cost",
+  "margin outlet"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

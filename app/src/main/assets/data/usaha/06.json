@@ -1,0 +1,28 @@
+{
+ "id": 6,
+ "nama": "Minyak & gas hulu",
+ "kelompok": "A",
+ "arketipe": "tambang_energi",
+ "modal_min_usd": 50000000.0,
+ "hpp_pct": 40.0,
+ "biaya_operasi_pct": 10.0,
+ "penyusutan_pct": 15.0,
+ "pekerja_min": 100,
+ "izin": [
+  "wilayah kerja",
+  "AMDAL",
+  "kontrak bagi hasil"
+ ],
+ "risiko": [
+  "eksplorasi gagal",
+  "harga minyak",
+  "deplesi sumur"
+ ],
+ "kpi": [
+  "biaya angkat per barel",
+  "penggantian cadangan",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

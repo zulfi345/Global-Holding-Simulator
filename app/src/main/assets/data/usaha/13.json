@@ -1,0 +1,27 @@
+{
+ "id": 13,
+ "nama": "Karet",
+ "kelompok": "B",
+ "arketipe": "pertanian",
+ "modal_min_usd": 400000.0,
+ "hpp_pct": 55.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 5.0,
+ "pekerja_min": 12,
+ "izin": [
+  "izin lahan",
+  "sertifikasi mutu"
+ ],
+ "risiko": [
+  "harga karet",
+  "penyakit daun",
+  "kekurangan penyadap"
+ ],
+ "kpi": [
+  "hasil per ha",
+  "biaya per ton",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

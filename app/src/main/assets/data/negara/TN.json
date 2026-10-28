@@ -1,0 +1,17 @@
+{
+ "kode": "TN",
+ "nama": "Tunisia",
+ "mata_uang": "TND",
+ "pdb_usd_miliar": 55.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 5.5,
+ "bunga_acuan_pct": 7.5,
+ "kurs_per_usd": 3.0,
+ "pph_badan_pct": 15.0,
+ "ppn_pct": 19.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 175.0,
+ "populasi_juta": 12.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,28 @@
+{
+ "id": 8,
+ "nama": "Tenaga angin",
+ "kelompok": "A",
+ "arketipe": "tambang_energi",
+ "modal_min_usd": 15000000.0,
+ "hpp_pct": 10.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 22.0,
+ "pekerja_min": 20,
+ "izin": [
+  "izin usaha ketenagalistrikan",
+  "PPA",
+  "lahan"
+ ],
+ "risiko": [
+  "kecepatan angin",
+  "tarif PPA",
+  "perawatan turbin"
+ ],
+ "kpi": [
+  "capacity factor",
+  "biaya per kWh",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

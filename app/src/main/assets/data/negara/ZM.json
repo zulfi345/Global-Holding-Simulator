@@ -1,0 +1,17 @@
+{
+ "kode": "ZM",
+ "nama": "Zambia",
+ "mata_uang": "ZMW",
+ "pdb_usd_miliar": 30.0,
+ "pertumbuhan_pct": 5.0,
+ "inflasi_pct": 11.0,
+ "bunga_acuan_pct": 14.5,
+ "kurs_per_usd": 23.0,
+ "pph_badan_pct": 30.0,
+ "ppn_pct": 16.0,
+ "pajak_dividen_pct": 20.0,
+ "upah_min_bulanan_usd": 110.0,
+ "populasi_juta": 21.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,27 @@
+{
+ "id": 60,
+ "nama": "Air & utilitas",
+ "kelompok": "H",
+ "arketipe": "layanan_regulasi",
+ "modal_min_usd": 40000000.0,
+ "hpp_pct": 25.0,
+ "biaya_operasi_pct": 30.0,
+ "penyusutan_pct": 15.0,
+ "pekerja_min": 80,
+ "izin": [
+  "izin utilitas",
+  "tarif diatur"
+ ],
+ "risiko": [
+  "tarif ditahan regulator",
+  "kebocoran",
+  "capex jaringan"
+ ],
+ "kpi": [
+  "biaya per m3",
+  "kebocoran",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

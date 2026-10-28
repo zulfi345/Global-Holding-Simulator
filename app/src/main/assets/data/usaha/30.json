@@ -1,0 +1,28 @@
+{
+ "id": 30,
+ "nama": "Cloud & data center",
+ "kelompok": "D",
+ "arketipe": "teknologi",
+ "modal_min_usd": 50000000.0,
+ "hpp_pct": 30.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 20.0,
+ "pekerja_min": 40,
+ "izin": [
+  "izin PSE",
+  "izin listrik",
+  "lokalisasi data"
+ ],
+ "risiko": [
+  "biaya listrik",
+  "kelebihan kapasitas",
+  "persaingan hyperscaler"
+ ],
+ "kpi": [
+  "utilisasi",
+  "PUE",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

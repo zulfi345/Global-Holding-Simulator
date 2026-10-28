@@ -1,0 +1,17 @@
+{
+ "kode": "EC",
+ "nama": "Ekuador",
+ "mata_uang": "USD",
+ "pdb_usd_miliar": 130.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 2.0,
+ "bunga_acuan_pct": 4.5,
+ "kurs_per_usd": 1.0,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 15.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 470.0,
+ "populasi_juta": 18.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

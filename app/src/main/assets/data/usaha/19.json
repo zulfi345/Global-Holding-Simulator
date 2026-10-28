@@ -1,0 +1,28 @@
+{
+ "id": 19,
+ "nama": "Petrokimia & plastik",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 100000000.0,
+ "hpp_pct": 75.0,
+ "biaya_operasi_pct": 8.0,
+ "penyusutan_pct": 5.0,
+ "pekerja_min": 300,
+ "izin": [
+  "izin industri",
+  "AMDAL",
+  "izin bahan kimia"
+ ],
+ "risiko": [
+  "harga nafta",
+  "kelebihan kapasitas",
+  "regulasi plastik"
+ ],
+ "kpi": [
+  "utilisasi",
+  "spread bahan baku",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

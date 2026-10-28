@@ -1,0 +1,28 @@
+{
+ "id": 26,
+ "nama": "Minuman",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 3000000.0,
+ "hpp_pct": 55.0,
+ "biaya_operasi_pct": 25.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 60,
+ "izin": [
+  "izin edar BPOM",
+  "sertifikat halal",
+  "izin industri"
+ ],
+ "risiko": [
+  "cukai",
+  "harga kemasan",
+  "persaingan merek"
+ ],
+ "kpi": [
+  "biaya per unit",
+  "utilisasi",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

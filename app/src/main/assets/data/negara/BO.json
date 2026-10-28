@@ -1,0 +1,17 @@
+{
+ "kode": "BO",
+ "nama": "Bolivia",
+ "mata_uang": "BOB",
+ "pdb_usd_miliar": 50.0,
+ "pertumbuhan_pct": 1.0,
+ "inflasi_pct": 10.0,
+ "bunga_acuan_pct": 6.0,
+ "kurs_per_usd": 6.96,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 13.0,
+ "pajak_dividen_pct": 12.5,
+ "upah_min_bulanan_usd": 475.0,
+ "populasi_juta": 12.3,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

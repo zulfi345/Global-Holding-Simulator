@@ -1,2 +1,61 @@
 id,nama,kelompok,arketipe,modal_min_usd,hpp_pct,biaya_operasi_pct,penyusutan_pct,pekerja_min,izin,risiko,kpi,tanggal_data,perkiraan
+1,Batu bara,A,tambang_energi,15000000,55,12,8,150,IUP;AMDAL;kewajiban pasar domestik,harga batu bara;cuaca;pajak karbon;tekanan ESG,biaya per ton;stripping ratio;margin EBITDA,2026-10,true
+2,Nikel,A,tambang_energi,25000000,50,10,9,200,IUP;AMDAL;izin smelter,harga nikel;kuota ekspor;limbah tailing,biaya per ton;recovery;margin EBITDA,2026-10,true
+3,Emas,A,tambang_energi,20000000,45,10,10,120,IUP;AMDAL;izin pengolahan,harga emas;kadar bijih;keselamatan kerja,biaya per oz;kadar bijih;umur cadangan,2026-10,true
+4,Tembaga,A,tambang_energi,40000000,50,10,10,250,IUP;AMDAL;izin smelter,harga tembaga;kadar bijih;listrik dan air,biaya per ton;recovery;umur cadangan,2026-10,true
+5,Bauksit & aluminium,A,tambang_energi,30000000,60,10,8,180,IUP;AMDAL;izin pengolahan,harga aluminium;biaya listrik;larangan ekspor bijih,biaya per ton;utilisasi;margin EBITDA,2026-10,true
+6,Minyak & gas hulu,A,tambang_energi,50000000,40,10,15,100,wilayah kerja;AMDAL;kontrak bagi hasil,eksplorasi gagal;harga minyak;deplesi sumur,biaya angkat per barel;penggantian cadangan;margin EBITDA,2026-10,true
+7,Tenaga surya (PLTS),A,tambang_energi,8000000,10,15,20,15,izin usaha ketenagalistrikan;PPA;lahan,cuaca;tarif PPA;harga panel,capacity factor;biaya per kWh;margin EBITDA,2026-10,true
+8,Tenaga angin,A,tambang_energi,15000000,10,15,22,20,izin usaha ketenagalistrikan;PPA;lahan,kecepatan angin;tarif PPA;perawatan turbin,capacity factor;biaya per kWh;margin EBITDA,2026-10,true
+9,Panas bumi,A,tambang_energi,30000000,15,20,15,40,izin panas bumi;PPA;izin kawasan hutan,eksplorasi gagal;penurunan uap;tarif PPA,capacity factor;biaya per kWh;margin EBITDA,2026-10,true
+10,Kelapa sawit,B,pertanian,3000000,45,15,6,60,HGU;ISPO;AMDAL,harga CPO;cuaca;hama;moratorium lahan,hasil TBS per ha;rendemen minyak;biaya per ton CPO,2026-10,true
+11,Padi & pangan pokok,B,pertanian,150000,55,20,5,5,izin lahan;program subsidi,gagal panen;harga pembelian pemerintah;banjir,hasil per ha;biaya per ton;margin bersih,2026-10,true
+12,Kopi & kakao,B,pertanian,300000,50,18,5,10,izin lahan;sertifikasi mutu,cuaca;harga komoditas;hama,hasil per ha;mutu biji;margin bersih,2026-10,true
+13,Karet,B,pertanian,400000,55,15,5,12,izin lahan;sertifikasi mutu,harga karet;penyakit daun;kekurangan penyadap,hasil per ha;biaya per ton;margin bersih,2026-10,true
+14,Perikanan & budidaya udang,B,pertanian,500000,55,15,7,15,izin budidaya;sertifikasi budidaya,penyakit udang;kualitas air;harga ekspor,rasio konversi pakan;tingkat hidup;biaya per kg,2026-10,true
+15,Peternakan unggas,B,pertanian,800000,70,12,4,10,izin peternakan;izin lingkungan,flu burung;harga pakan;harga ayam,rasio konversi pakan;kematian;margin bersih,2026-10,true
+16,Peternakan sapi,B,pertanian,600000,65,12,4,8,izin peternakan;izin lingkungan,penyakit mulut dan kuku;harga pakan;siklus panjang,pertambahan bobot harian;biaya per kg bobot;margin bersih,2026-10,true
+17,Baja,C,manufaktur,60000000,75,8,5,300,izin industri;AMDAL;SNI,harga bijih besi;impor murah;biaya listrik,utilisasi;biaya per ton;margin EBITDA,2026-10,true
+18,Semen,C,manufaktur,80000000,60,12,8,250,izin industri;AMDAL;izin tambang kapur,kelebihan kapasitas;harga energi;pajak karbon,utilisasi;biaya per ton;margin EBITDA,2026-10,true
+19,Petrokimia & plastik,C,manufaktur,100000000,75,8,5,300,izin industri;AMDAL;izin bahan kimia,harga nafta;kelebihan kapasitas;regulasi plastik,utilisasi;spread bahan baku;margin EBITDA,2026-10,true
+20,Tekstil & garmen,C,manufaktur,3000000,65,20,3,300,izin industri;sertifikasi sosial,kenaikan upah;pesanan musiman;impor murah,biaya per unit;ketepatan kirim;margin bersih,2026-10,true
+21,Furnitur,C,manufaktur,1500000,60,22,4,100,izin industri;sertifikat legalitas kayu,harga kayu;pesanan ekspor;tarif,biaya per unit;utilisasi;margin bersih,2026-10,true
+22,Otomotif,C,manufaktur,300000000,80,10,4,1500,izin industri;homologasi;AMDAL,siklus permintaan;rantai pasok;transisi kendaraan listrik,utilisasi;biaya per unit;margin EBITDA,2026-10,true
+23,Elektronik,C,manufaktur,20000000,75,12,4,500,izin industri;sertifikasi produk,pasokan komponen;siklus produk;tarif,yield;biaya per unit;margin bersih,2026-10,true
+24,Semikonduktor,C,manufaktur,200000000,45,20,20,800,izin industri;izin lingkungan;lisensi ekspor teknologi,siklus chip;kontrol ekspor;capex besar,yield;utilisasi;margin EBITDA,2026-10,true
+25,Makanan olahan,C,manufaktur,2000000,65,20,3,50,izin edar BPOM;sertifikat halal;izin industri,harga bahan baku;keamanan pangan;persaingan merek,biaya per unit;utilisasi;margin bersih,2026-10,true
+26,Minuman,C,manufaktur,3000000,55,25,4,60,izin edar BPOM;sertifikat halal;izin industri,cukai;harga kemasan;persaingan merek,biaya per unit;utilisasi;margin bersih,2026-10,true
+27,Farmasi,C,manufaktur,10000000,40,35,4,100,izin edar BPOM;CPOB;izin industri farmasi,paten habis;harga diatur;uji klinis gagal,margin kotor;pangsa pasar;rasio R&D,2026-10,true
+28,Kemasan & kertas,C,manufaktur,8000000,70,10,6,120,izin industri;AMDAL,harga pulp;harga energi;regulasi plastik,utilisasi;biaya per ton;margin EBITDA,2026-10,true
+29,Software/SaaS,D,teknologi,500000,20,55,3,10,izin PSE;perlindungan data,churn pelanggan;talenta mahal;persaingan,ARR;churn;LTV per CAC,2026-10,true
+30,Cloud & data center,D,teknologi,50000000,30,15,20,40,izin PSE;izin listrik;lokalisasi data,biaya listrik;kelebihan kapasitas;persaingan hyperscaler,utilisasi;PUE;margin EBITDA,2026-10,true
+31,E-commerce,D,teknologi,3000000,70,25,2,30,izin PSE;izin perdagangan elektronik,subsidi promosi;biaya logistik;persaingan,GMV;take rate;biaya akuisisi,2026-10,true
+32,Fintech pembayaran,D,teknologi,2000000,40,40,2,20,izin penyelenggara pembayaran;kepatuhan APU-PPT,fraud;regulasi;tekanan biaya MDR,volume transaksi;take rate;fraud rate,2026-10,true
+33,Game & hiburan digital,D,teknologi,1000000,30,50,3,15,izin PSE;klasifikasi konten,hit atau flop;biaya akuisisi pemain;regulasi konten,DAU;ARPU;retensi,2026-10,true
+34,AI & keamanan siber,D,teknologi,5000000,35,45,4,20,izin PSE;sertifikasi keamanan,biaya komputasi;talenta langka;regulasi AI,pendapatan berulang;churn;margin kotor,2026-10,true
+35,Bank komersial,E,finansial,100000000,45,30,2,200,izin bank OJK;modal inti minimum;rasio CAR,kredit macet;risiko likuiditas;perubahan suku bunga,NIM;NPL;CAR;LDR,2026-10,true
+36,Bank digital,E,finansial,100000000,40,35,2,80,izin bank OJK;modal inti minimum;rasio CAR,biaya akuisisi nasabah;kredit macet;fraud,NIM;NPL;CAR;biaya per nasabah,2026-10,true
+37,Asuransi jiwa,E,finansial,30000000,60,25,1,80,izin asuransi OJK;modal minimum;rasio RBC,mortalitas;hasil investasi;pembatalan polis,RBC;rasio klaim;hasil investasi,2026-10,true
+38,Asuransi umum,E,finansial,20000000,60,28,1,60,izin asuransi OJK;modal minimum;rasio RBC,bencana;biaya reasuransi;harga premi,combined ratio;RBC;rasio klaim,2026-10,true
+39,Multifinance & leasing,E,finansial,15000000,40,25,1,60,izin multifinance OJK;batas gearing,kredit macet;kenaikan biaya dana;pelunasan dini,NPF;NIM;gearing,2026-10,true
+40,Sekuritas & manajer investasi,E,finansial,5000000,10,60,2,30,izin OJK;modal kerja bersih disesuaikan,volume transaksi turun;pasar jatuh;kepatuhan,AUM;pendapatan komisi;margin bersih,2026-10,true
+41,Pelayaran kargo,F,logistik,30000000,55,10,12,60,izin pelayaran;sertifikat kapal;kepatuhan IMO,tarif angkut;harga BBM;siklus kapal,utilisasi;biaya per ton-mil;margin EBITDA,2026-10,true
+42,Trucking,F,logistik,1000000,60,15,8,20,izin angkutan barang;uji KIR,harga BBM;muatan balik kosong;aturan ODOL,utilisasi armada;biaya per km;margin bersih,2026-10,true
+43,Maskapai,F,logistik,80000000,65,15,8,500,AOC;izin rute;sertifikasi keselamatan,harga avtur;permintaan musiman;kurs,load factor;biaya per kursi-km;yield,2026-10,true
+44,Pergudangan & cold chain,F,logistik,5000000,35,30,10,30,izin gudang;sertifikasi rantai dingin,biaya listrik;okupansi;kerusakan barang,okupansi;biaya per pallet;margin EBITDA,2026-10,true
+45,Kurir & last-mile,F,logistik,3000000,60,20,5,80,izin pos;izin angkutan,perang tarif;biaya BBM;upah kurir,biaya per paket;ketepatan kirim;volume,2026-10,true
+46,Transportasi kota & ride-hailing,F,logistik,4000000,65,20,3,25,izin angkutan;izin PSE,insentif mitra;regulasi tarif;persaingan,trip per hari;take rate;biaya akuisisi,2026-10,true
+47,Pengembang perumahan,G,properti_konstruksi,15000000,65,10,1,40,izin lokasi;PBG;AMDAL,suku bunga KPR;harga tanah;perizinan lambat,presales;biaya per m2;margin proyek,2026-10,true
+48,Properti komersial & mal,G,properti_konstruksi,50000000,25,25,10,40,izin lokasi;PBG;sertifikat laik fungsi,okupansi;suku bunga;belanja daring,okupansi;sewa per m2;margin NOI,2026-10,true
+49,Kontraktor infrastruktur,G,properti_konstruksi,10000000,80,8,3,150,SBU konstruksi;sertifikat tenaga ahli,keterlambatan proyek;pembayaran tertunda;harga material,margin proyek;backlog;hari piutang,2026-10,true
+50,Hotel & resort,G,ritel_jasa,20000000,25,45,8,60,izin usaha pariwisata;sertifikat laik fungsi,musiman;okupansi;reputasi,okupansi;tarif rata-rata kamar;RevPAR,2026-10,true
+51,Kawasan industri,G,properti_konstruksi,40000000,40,15,5,40,izin kawasan industri;AMDAL,okupansi tenant;pembebasan lahan;suku bunga,okupansi lahan;harga per m2;margin,2026-10,true
 52,Rumah makan,H,ritel_jasa,1200,35,40,3,3,izin usaha kecil;sertifikat higiene,harga bahan baku;lokasi sepi;reputasi,margin bersih;omzet per kursi;food cost,2026-10,true
+53,Kafe & waralaba,H,ritel_jasa,60000,30,45,4,5,izin usaha;sertifikat higiene;kontrak waralaba,sewa naik;lokasi;tren konsumen,omzet per outlet;food cost;margin outlet,2026-10,true
+54,Minimarket,H,ritel_jasa,100000,78,15,2,4,izin usaha;izin barang terbatas,pencurian;persaingan;sewa,omzet per m2;susut stok;margin,2026-10,true
+55,Supermarket,H,ritel_jasa,3000000,78,15,3,60,izin usaha;sertifikat higiene,margin tipis;susut persediaan;e-commerce,omzet per m2;perputaran persediaan;margin,2026-10,true
+56,Rumah sakit & klinik,H,layanan_regulasi,20000000,30,50,6,200,izin rumah sakit;akreditasi;izin tenaga medis,tarif BPJS;kekurangan tenaga medis;malpraktik,tingkat hunian;pendapatan per pasien;margin EBITDA,2026-10,true
+57,Sekolah & kampus,H,layanan_regulasi,5000000,10,70,4,50,izin pendidikan;akreditasi,jumlah siswa;regulasi biaya;reputasi,jumlah siswa;rasio guru;margin,2026-10,true
+58,Telekomunikasi & menara,H,layanan_regulasi,150000000,20,35,20,150,izin jaringan;izin frekuensi;kewajiban layanan universal,perang tarif;capex jaringan;biaya frekuensi,ARPU;churn;margin EBITDA,2026-10,true
+59,Media & hiburan,H,layanan_regulasi,3000000,40,40,4,40,izin penyiaran;izin konten,iklan turun;pergeseran penonton;hak siar mahal,pendapatan iklan;jumlah pengguna;margin,2026-10,true
+60,Air & utilitas,H,layanan_regulasi,40000000,25,30,15,80,izin utilitas;tarif diatur,tarif ditahan regulator;kebocoran;capex jaringan,biaya per m3;kebocoran;margin EBITDA,2026-10,true

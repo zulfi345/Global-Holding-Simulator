@@ -3,7 +3,7 @@
 - settings.gradle.kts, build.gradle.kts, gradle.properties | konfigurasi Gradle | -> app/build.gradle.kts
 - app/build.gradle.kts | dependensi (Compose BOM 2024.06.00, Kotlin 1.9.24, AGP 8.5.2, Gradle 8.7) | -> MainActivity
 - app/.../MainActivity.kt | layar awal | nanti memuat ui/*
-- data/src/negara.csv | sumber data negara (10 negara) | -> tools/gen_negara.py -> assets/data/negara/<kode>.json
+- data/src/negara.csv | sumber data negara (100 negara) | -> tools/gen_negara.py -> assets/data/negara/<kode>.json
 - tools/gen_negara.py | CSV->JSON + validasi | memakai data/src/negara.csv
 - Folder kosong siap isi: domain/engine, domain/usaha, domain/rival, data, ui, assets/data/{negara,usaha,rival,aset,meta}
 - data/Negara.kt | model data negara + dariJson | dipakai NegaraLoader, nanti engine pajak/kurs/makro
@@ -14,7 +14,7 @@
 - domain/engine/MakroState.kt | state makro per negara | memakai data/Negara; dipakai MakroEngine
 - domain/engine/MakroEngine.kt | tick bulanan makro | memakai MakroState; diuji MakroEngineTest
 - test/.../MakroEngineTest.kt | uji deterministik, batas, mean reversion | memakai MakroEngine
-- domain/engine/KursEngine.kt | tick bulanan kurs per USD | memakai MakroState (lokal & AS); diuji KursEngineTest
+- domain/engine/KursEngine.kt | tick bulanan kurs per USD | memakai MakroState (lokal & AS); zona euro + terkait via tickSemua; diuji KursEngineTest
 - domain/engine/PajakEngine.kt | PPh badan, PPN neto, pajak dividen | memakai data/Negara (tarif); diuji PajakEngineTest; nanti dipakai LabaRugi
 - domain/engine/LabaRugi.kt | laba rugi (kotor, EBITDA, EBIT, pajak, bersih) | memakai PajakEngine; diuji LabaRugiEngineTest; nanti memberi laba bersih ke Neraca
 - domain/engine/Neraca.kt | neraca + cek seimbang | dipakai ArusKas; diuji NeracaTest; nanti menerima laba bersih dari LabaRugi
@@ -22,3 +22,9 @@
 - domain/engine/Akuntansi.kt | tutup periode: neraca awal + laba -> neraca akhir + arus kas | memakai Neraca, ArusKas, LabaRugi; diuji AkuntansiTest
 - data/src/usaha.csv | sumber data 60 usaha (Lampiran A) | -> tools/gen_usaha.py -> assets/data/usaha/<id>.json
 - tools/gen_usaha.py | CSV->JSON usaha + validasi | memakai data/src/usaha.csv
+- data/Usaha.kt | model data usaha + dariJson | dipakai UsahaLoader, ArketipeUsaha
+- data/UsahaLoader.kt | baca assets/data/usaha/*.json | memakai Usaha.kt; nanti dipanggil dari ui/
+- domain/usaha/ArketipeUsaha.kt | enum arketipe, struktur biaya, registry strategi | memakai data/Usaha; diuji ArketipeUsahaTest; nanti memberi biaya ke LabaRugiEngine
+- domain/usaha/StrategiFinansial.kt | NIM, cadangan NPL, CAR (bank tanpa bahan baku) | memakai ArketipeUsaha; diuji StrategiFinansialTest; dipakai ArketipeRegistry
+- domain/usaha/StrategiTambangEnergi.kt | royalti, deplesi, harga komoditas | memakai ArketipeUsaha; diuji StrategiTambangEnergiTest; dipakai ArketipeRegistry
+- test/.../usaha/ArketipeUsahaTestData.kt | helper pembuat Usaha untuk uji | dipakai uji strategi

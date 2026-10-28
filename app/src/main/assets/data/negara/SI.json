@@ -1,0 +1,17 @@
+{
+ "kode": "SI",
+ "nama": "Slovenia",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 75.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 2.5,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 22.0,
+ "ppn_pct": 22.0,
+ "pajak_dividen_pct": 25.0,
+ "upah_min_bulanan_usd": 1470.0,
+ "populasi_juta": 2.1,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

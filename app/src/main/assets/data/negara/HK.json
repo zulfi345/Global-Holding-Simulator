@@ -1,0 +1,17 @@
+{
+ "kode": "HK",
+ "nama": "Hong Kong",
+ "mata_uang": "HKD",
+ "pdb_usd_miliar": 420.0,
+ "pertumbuhan_pct": 2.5,
+ "inflasi_pct": 1.8,
+ "bunga_acuan_pct": 4.0,
+ "kurs_per_usd": 7.8,
+ "pph_badan_pct": 16.5,
+ "ppn_pct": 0.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 940.0,
+ "populasi_juta": 7.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

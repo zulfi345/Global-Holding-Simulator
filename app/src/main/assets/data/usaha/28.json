@@ -1,0 +1,27 @@
+{
+ "id": 28,
+ "nama": "Kemasan & kertas",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 8000000.0,
+ "hpp_pct": 70.0,
+ "biaya_operasi_pct": 10.0,
+ "penyusutan_pct": 6.0,
+ "pekerja_min": 120,
+ "izin": [
+  "izin industri",
+  "AMDAL"
+ ],
+ "risiko": [
+  "harga pulp",
+  "harga energi",
+  "regulasi plastik"
+ ],
+ "kpi": [
+  "utilisasi",
+  "biaya per ton",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

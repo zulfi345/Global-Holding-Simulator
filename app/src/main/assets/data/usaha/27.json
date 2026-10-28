@@ -1,0 +1,28 @@
+{
+ "id": 27,
+ "nama": "Farmasi",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 10000000.0,
+ "hpp_pct": 40.0,
+ "biaya_operasi_pct": 35.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 100,
+ "izin": [
+  "izin edar BPOM",
+  "CPOB",
+  "izin industri farmasi"
+ ],
+ "risiko": [
+  "paten habis",
+  "harga diatur",
+  "uji klinis gagal"
+ ],
+ "kpi": [
+  "margin kotor",
+  "pangsa pasar",
+  "rasio R&D"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

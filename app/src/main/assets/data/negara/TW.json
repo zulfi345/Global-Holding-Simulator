@@ -1,0 +1,17 @@
+{
+ "kode": "TW",
+ "nama": "Taiwan",
+ "mata_uang": "TWD",
+ "pdb_usd_miliar": 800.0,
+ "pertumbuhan_pct": 3.0,
+ "inflasi_pct": 1.8,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 31.0,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 5.0,
+ "pajak_dividen_pct": 21.0,
+ "upah_min_bulanan_usd": 950.0,
+ "populasi_juta": 23.4,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

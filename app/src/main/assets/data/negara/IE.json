@@ -1,0 +1,17 @@
+{
+ "kode": "IE",
+ "nama": "Irlandia",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 600.0,
+ "pertumbuhan_pct": 3.0,
+ "inflasi_pct": 2.0,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 12.5,
+ "ppn_pct": 23.0,
+ "pajak_dividen_pct": 25.0,
+ "upah_min_bulanan_usd": 2650.0,
+ "populasi_juta": 5.4,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

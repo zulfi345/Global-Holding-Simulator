@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "nama": "Kelapa sawit",
+ "kelompok": "B",
+ "arketipe": "pertanian",
+ "modal_min_usd": 3000000.0,
+ "hpp_pct": 45.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 6.0,
+ "pekerja_min": 60,
+ "izin": [
+  "HGU",
+  "ISPO",
+  "AMDAL"
+ ],
+ "risiko": [
+  "harga CPO",
+  "cuaca",
+  "hama",
+  "moratorium lahan"
+ ],
+ "kpi": [
+  "hasil TBS per ha",
+  "rendemen minyak",
+  "biaya per ton CPO"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

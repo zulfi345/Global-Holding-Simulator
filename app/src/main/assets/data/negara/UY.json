@@ -1,0 +1,17 @@
+{
+ "kode": "UY",
+ "nama": "Uruguay",
+ "mata_uang": "UYU",
+ "pdb_usd_miliar": 85.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 5.0,
+ "bunga_acuan_pct": 8.5,
+ "kurs_per_usd": 40.0,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 22.0,
+ "pajak_dividen_pct": 12.0,
+ "upah_min_bulanan_usd": 590.0,
+ "populasi_juta": 3.4,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

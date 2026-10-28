@@ -1,0 +1,28 @@
+{
+ "id": 41,
+ "nama": "Pelayaran kargo",
+ "kelompok": "F",
+ "arketipe": "logistik",
+ "modal_min_usd": 30000000.0,
+ "hpp_pct": 55.0,
+ "biaya_operasi_pct": 10.0,
+ "penyusutan_pct": 12.0,
+ "pekerja_min": 60,
+ "izin": [
+  "izin pelayaran",
+  "sertifikat kapal",
+  "kepatuhan IMO"
+ ],
+ "risiko": [
+  "tarif angkut",
+  "harga BBM",
+  "siklus kapal"
+ ],
+ "kpi": [
+  "utilisasi",
+  "biaya per ton-mil",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

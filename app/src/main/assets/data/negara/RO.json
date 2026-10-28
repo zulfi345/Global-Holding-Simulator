@@ -1,0 +1,17 @@
+{
+ "kode": "RO",
+ "nama": "Rumania",
+ "mata_uang": "RON",
+ "pdb_usd_miliar": 430.0,
+ "pertumbuhan_pct": 1.0,
+ "inflasi_pct": 5.0,
+ "bunga_acuan_pct": 6.5,
+ "kurs_per_usd": 4.4,
+ "pph_badan_pct": 16.0,
+ "ppn_pct": 21.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 900.0,
+ "populasi_juta": 19.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

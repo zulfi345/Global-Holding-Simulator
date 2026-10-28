@@ -1,0 +1,27 @@
+{
+ "id": 15,
+ "nama": "Peternakan unggas",
+ "kelompok": "B",
+ "arketipe": "pertanian",
+ "modal_min_usd": 800000.0,
+ "hpp_pct": 70.0,
+ "biaya_operasi_pct": 12.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 10,
+ "izin": [
+  "izin peternakan",
+  "izin lingkungan"
+ ],
+ "risiko": [
+  "flu burung",
+  "harga pakan",
+  "harga ayam"
+ ],
+ "kpi": [
+  "rasio konversi pakan",
+  "kematian",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

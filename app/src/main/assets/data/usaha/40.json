@@ -1,0 +1,27 @@
+{
+ "id": 40,
+ "nama": "Sekuritas & manajer investasi",
+ "kelompok": "E",
+ "arketipe": "finansial",
+ "modal_min_usd": 5000000.0,
+ "hpp_pct": 10.0,
+ "biaya_operasi_pct": 60.0,
+ "penyusutan_pct": 2.0,
+ "pekerja_min": 30,
+ "izin": [
+  "izin OJK",
+  "modal kerja bersih disesuaikan"
+ ],
+ "risiko": [
+  "volume transaksi turun",
+  "pasar jatuh",
+  "kepatuhan"
+ ],
+ "kpi": [
+  "AUM",
+  "pendapatan komisi",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

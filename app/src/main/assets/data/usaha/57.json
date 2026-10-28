@@ -1,0 +1,27 @@
+{
+ "id": 57,
+ "nama": "Sekolah & kampus",
+ "kelompok": "H",
+ "arketipe": "layanan_regulasi",
+ "modal_min_usd": 5000000.0,
+ "hpp_pct": 10.0,
+ "biaya_operasi_pct": 70.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 50,
+ "izin": [
+  "izin pendidikan",
+  "akreditasi"
+ ],
+ "risiko": [
+  "jumlah siswa",
+  "regulasi biaya",
+  "reputasi"
+ ],
+ "kpi": [
+  "jumlah siswa",
+  "rasio guru",
+  "margin"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

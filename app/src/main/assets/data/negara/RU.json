@@ -1,0 +1,17 @@
+{
+ "kode": "RU",
+ "nama": "Rusia",
+ "mata_uang": "RUB",
+ "pdb_usd_miliar": 2300.0,
+ "pertumbuhan_pct": 1.0,
+ "inflasi_pct": 7.5,
+ "bunga_acuan_pct": 16.0,
+ "kurs_per_usd": 85.0,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 22.0,
+ "pajak_dividen_pct": 15.0,
+ "upah_min_bulanan_usd": 265.0,
+ "populasi_juta": 144.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,28 @@
+{
+ "id": 48,
+ "nama": "Properti komersial & mal",
+ "kelompok": "G",
+ "arketipe": "properti_konstruksi",
+ "modal_min_usd": 50000000.0,
+ "hpp_pct": 25.0,
+ "biaya_operasi_pct": 25.0,
+ "penyusutan_pct": 10.0,
+ "pekerja_min": 40,
+ "izin": [
+  "izin lokasi",
+  "PBG",
+  "sertifikat laik fungsi"
+ ],
+ "risiko": [
+  "okupansi",
+  "suku bunga",
+  "belanja daring"
+ ],
+ "kpi": [
+  "okupansi",
+  "sewa per m2",
+  "margin NOI"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

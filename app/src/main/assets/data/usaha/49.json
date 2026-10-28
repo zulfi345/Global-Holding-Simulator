@@ -1,0 +1,27 @@
+{
+ "id": 49,
+ "nama": "Kontraktor infrastruktur",
+ "kelompok": "G",
+ "arketipe": "properti_konstruksi",
+ "modal_min_usd": 10000000.0,
+ "hpp_pct": 80.0,
+ "biaya_operasi_pct": 8.0,
+ "penyusutan_pct": 3.0,
+ "pekerja_min": 150,
+ "izin": [
+  "SBU konstruksi",
+  "sertifikat tenaga ahli"
+ ],
+ "risiko": [
+  "keterlambatan proyek",
+  "pembayaran tertunda",
+  "harga material"
+ ],
+ "kpi": [
+  "margin proyek",
+  "backlog",
+  "hari piutang"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

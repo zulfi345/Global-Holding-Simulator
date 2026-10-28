@@ -1,0 +1,17 @@
+{
+ "kode": "LV",
+ "nama": "Latvia",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 45.0,
+ "pertumbuhan_pct": 1.5,
+ "inflasi_pct": 3.0,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 21.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 850.0,
+ "populasi_juta": 1.9,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

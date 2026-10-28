@@ -1,0 +1,27 @@
+{
+ "id": 16,
+ "nama": "Peternakan sapi",
+ "kelompok": "B",
+ "arketipe": "pertanian",
+ "modal_min_usd": 600000.0,
+ "hpp_pct": 65.0,
+ "biaya_operasi_pct": 12.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 8,
+ "izin": [
+  "izin peternakan",
+  "izin lingkungan"
+ ],
+ "risiko": [
+  "penyakit mulut dan kuku",
+  "harga pakan",
+  "siklus panjang"
+ ],
+ "kpi": [
+  "pertambahan bobot harian",
+  "biaya per kg bobot",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

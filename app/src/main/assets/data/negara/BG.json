@@ -1,0 +1,17 @@
+{
+ "kode": "BG",
+ "nama": "Bulgaria",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 130.0,
+ "pertumbuhan_pct": 3.0,
+ "inflasi_pct": 3.5,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 10.0,
+ "ppn_pct": 20.0,
+ "pajak_dividen_pct": 5.0,
+ "upah_min_bulanan_usd": 710.0,
+ "populasi_juta": 6.4,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

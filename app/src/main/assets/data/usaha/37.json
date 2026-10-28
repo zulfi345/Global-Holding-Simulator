@@ -1,0 +1,28 @@
+{
+ "id": 37,
+ "nama": "Asuransi jiwa",
+ "kelompok": "E",
+ "arketipe": "finansial",
+ "modal_min_usd": 30000000.0,
+ "hpp_pct": 60.0,
+ "biaya_operasi_pct": 25.0,
+ "penyusutan_pct": 1.0,
+ "pekerja_min": 80,
+ "izin": [
+  "izin asuransi OJK",
+  "modal minimum",
+  "rasio RBC"
+ ],
+ "risiko": [
+  "mortalitas",
+  "hasil investasi",
+  "pembatalan polis"
+ ],
+ "kpi": [
+  "RBC",
+  "rasio klaim",
+  "hasil investasi"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

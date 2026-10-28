@@ -1,0 +1,27 @@
+{
+ "id": 31,
+ "nama": "E-commerce",
+ "kelompok": "D",
+ "arketipe": "teknologi",
+ "modal_min_usd": 3000000.0,
+ "hpp_pct": 70.0,
+ "biaya_operasi_pct": 25.0,
+ "penyusutan_pct": 2.0,
+ "pekerja_min": 30,
+ "izin": [
+  "izin PSE",
+  "izin perdagangan elektronik"
+ ],
+ "risiko": [
+  "subsidi promosi",
+  "biaya logistik",
+  "persaingan"
+ ],
+ "kpi": [
+  "GMV",
+  "take rate",
+  "biaya akuisisi"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

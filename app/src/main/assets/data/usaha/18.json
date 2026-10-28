@@ -1,0 +1,28 @@
+{
+ "id": 18,
+ "nama": "Semen",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 80000000.0,
+ "hpp_pct": 60.0,
+ "biaya_operasi_pct": 12.0,
+ "penyusutan_pct": 8.0,
+ "pekerja_min": 250,
+ "izin": [
+  "izin industri",
+  "AMDAL",
+  "izin tambang kapur"
+ ],
+ "risiko": [
+  "kelebihan kapasitas",
+  "harga energi",
+  "pajak karbon"
+ ],
+ "kpi": [
+  "utilisasi",
+  "biaya per ton",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

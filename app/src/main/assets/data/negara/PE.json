@@ -1,0 +1,17 @@
+{
+ "kode": "PE",
+ "nama": "Peru",
+ "mata_uang": "PEN",
+ "pdb_usd_miliar": 320.0,
+ "pertumbuhan_pct": 3.0,
+ "inflasi_pct": 2.0,
+ "bunga_acuan_pct": 4.25,
+ "kurs_per_usd": 3.6,
+ "pph_badan_pct": 29.5,
+ "ppn_pct": 18.0,
+ "pajak_dividen_pct": 5.0,
+ "upah_min_bulanan_usd": 315.0,
+ "populasi_juta": 34.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

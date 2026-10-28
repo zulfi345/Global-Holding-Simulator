@@ -1,0 +1,27 @@
+{
+ "id": 32,
+ "nama": "Fintech pembayaran",
+ "kelompok": "D",
+ "arketipe": "teknologi",
+ "modal_min_usd": 2000000.0,
+ "hpp_pct": 40.0,
+ "biaya_operasi_pct": 40.0,
+ "penyusutan_pct": 2.0,
+ "pekerja_min": 20,
+ "izin": [
+  "izin penyelenggara pembayaran",
+  "kepatuhan APU-PPT"
+ ],
+ "risiko": [
+  "fraud",
+  "regulasi",
+  "tekanan biaya MDR"
+ ],
+ "kpi": [
+  "volume transaksi",
+  "take rate",
+  "fraud rate"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

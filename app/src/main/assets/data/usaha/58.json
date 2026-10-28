@@ -1,0 +1,28 @@
+{
+ "id": 58,
+ "nama": "Telekomunikasi & menara",
+ "kelompok": "H",
+ "arketipe": "layanan_regulasi",
+ "modal_min_usd": 150000000.0,
+ "hpp_pct": 20.0,
+ "biaya_operasi_pct": 35.0,
+ "penyusutan_pct": 20.0,
+ "pekerja_min": 150,
+ "izin": [
+  "izin jaringan",
+  "izin frekuensi",
+  "kewajiban layanan universal"
+ ],
+ "risiko": [
+  "perang tarif",
+  "capex jaringan",
+  "biaya frekuensi"
+ ],
+ "kpi": [
+  "ARPU",
+  "churn",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

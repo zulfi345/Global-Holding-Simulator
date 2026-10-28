@@ -1,0 +1,17 @@
+{
+ "kode": "KZ",
+ "nama": "Kazakhstan",
+ "mata_uang": "KZT",
+ "pdb_usd_miliar": 300.0,
+ "pertumbuhan_pct": 5.0,
+ "inflasi_pct": 10.0,
+ "bunga_acuan_pct": 17.0,
+ "kurs_per_usd": 520.0,
+ "pph_badan_pct": 20.0,
+ "ppn_pct": 16.0,
+ "pajak_dividen_pct": 15.0,
+ "upah_min_bulanan_usd": 180.0,
+ "populasi_juta": 20.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

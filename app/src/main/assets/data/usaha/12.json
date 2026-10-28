@@ -1,0 +1,27 @@
+{
+ "id": 12,
+ "nama": "Kopi & kakao",
+ "kelompok": "B",
+ "arketipe": "pertanian",
+ "modal_min_usd": 300000.0,
+ "hpp_pct": 50.0,
+ "biaya_operasi_pct": 18.0,
+ "penyusutan_pct": 5.0,
+ "pekerja_min": 10,
+ "izin": [
+  "izin lahan",
+  "sertifikasi mutu"
+ ],
+ "risiko": [
+  "cuaca",
+  "harga komoditas",
+  "hama"
+ ],
+ "kpi": [
+  "hasil per ha",
+  "mutu biji",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

@@ -1,0 +1,17 @@
+{
+ "kode": "MX",
+ "nama": "Meksiko",
+ "mata_uang": "MXN",
+ "pdb_usd_miliar": 1900.0,
+ "pertumbuhan_pct": 1.2,
+ "inflasi_pct": 3.8,
+ "bunga_acuan_pct": 7.0,
+ "kurs_per_usd": 18.5,
+ "pph_badan_pct": 30.0,
+ "ppn_pct": 16.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 510.0,
+ "populasi_juta": 131.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

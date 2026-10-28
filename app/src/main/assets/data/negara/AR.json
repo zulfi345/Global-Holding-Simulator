@@ -1,0 +1,17 @@
+{
+ "kode": "AR",
+ "nama": "Argentina",
+ "mata_uang": "ARS",
+ "pdb_usd_miliar": 700.0,
+ "pertumbuhan_pct": 3.5,
+ "inflasi_pct": 25.0,
+ "bunga_acuan_pct": 30.0,
+ "kurs_per_usd": 1450.0,
+ "pph_badan_pct": 35.0,
+ "ppn_pct": 21.0,
+ "pajak_dividen_pct": 7.0,
+ "upah_min_bulanan_usd": 235.0,
+ "populasi_juta": 46.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

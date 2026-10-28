@@ -1,0 +1,28 @@
+{
+ "id": 24,
+ "nama": "Semikonduktor",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 200000000.0,
+ "hpp_pct": 45.0,
+ "biaya_operasi_pct": 20.0,
+ "penyusutan_pct": 20.0,
+ "pekerja_min": 800,
+ "izin": [
+  "izin industri",
+  "izin lingkungan",
+  "lisensi ekspor teknologi"
+ ],
+ "risiko": [
+  "siklus chip",
+  "kontrol ekspor",
+  "capex besar"
+ ],
+ "kpi": [
+  "yield",
+  "utilisasi",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

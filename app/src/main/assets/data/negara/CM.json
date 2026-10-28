@@ -1,0 +1,17 @@
+{
+ "kode": "CM",
+ "nama": "Kamerun",
+ "mata_uang": "XAF",
+ "pdb_usd_miliar": 55.0,
+ "pertumbuhan_pct": 4.0,
+ "inflasi_pct": 4.0,
+ "bunga_acuan_pct": 4.5,
+ "kurs_per_usd": 570.0,
+ "pph_badan_pct": 33.0,
+ "ppn_pct": 19.25,
+ "pajak_dividen_pct": 15.0,
+ "upah_min_bulanan_usd": 79.0,
+ "populasi_juta": 29.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

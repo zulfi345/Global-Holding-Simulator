@@ -1,0 +1,17 @@
+{
+ "kode": "MN",
+ "nama": "Mongolia",
+ "mata_uang": "MNT",
+ "pdb_usd_miliar": 25.0,
+ "pertumbuhan_pct": 5.0,
+ "inflasi_pct": 8.0,
+ "bunga_acuan_pct": 12.0,
+ "kurs_per_usd": 3600.0,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 10.0,
+ "pajak_dividen_pct": 20.0,
+ "upah_min_bulanan_usd": 185.0,
+ "populasi_juta": 3.5,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

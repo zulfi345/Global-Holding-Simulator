@@ -1,0 +1,17 @@
+{
+ "kode": "SE",
+ "nama": "Swedia",
+ "mata_uang": "SEK",
+ "pdb_usd_miliar": 650.0,
+ "pertumbuhan_pct": 2.0,
+ "inflasi_pct": 1.5,
+ "bunga_acuan_pct": 1.75,
+ "kurs_per_usd": 9.4,
+ "pph_badan_pct": 20.6,
+ "ppn_pct": 25.0,
+ "pajak_dividen_pct": 30.0,
+ "upah_min_bulanan_usd": 3200.0,
+ "populasi_juta": 10.6,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

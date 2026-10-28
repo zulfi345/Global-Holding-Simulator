@@ -1,0 +1,27 @@
+{
+ "id": 51,
+ "nama": "Kawasan industri",
+ "kelompok": "G",
+ "arketipe": "properti_konstruksi",
+ "modal_min_usd": 40000000.0,
+ "hpp_pct": 40.0,
+ "biaya_operasi_pct": 15.0,
+ "penyusutan_pct": 5.0,
+ "pekerja_min": 40,
+ "izin": [
+  "izin kawasan industri",
+  "AMDAL"
+ ],
+ "risiko": [
+  "okupansi tenant",
+  "pembebasan lahan",
+  "suku bunga"
+ ],
+ "kpi": [
+  "okupansi lahan",
+  "harga per m2",
+  "margin"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

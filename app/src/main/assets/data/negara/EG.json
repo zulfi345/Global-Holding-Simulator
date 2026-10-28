@@ -1,0 +1,17 @@
+{
+ "kode": "EG",
+ "nama": "Mesir",
+ "mata_uang": "EGP",
+ "pdb_usd_miliar": 330.0,
+ "pertumbuhan_pct": 4.5,
+ "inflasi_pct": 14.0,
+ "bunga_acuan_pct": 21.0,
+ "kurs_per_usd": 50.0,
+ "pph_badan_pct": 22.5,
+ "ppn_pct": 14.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 140.0,
+ "populasi_juta": 115.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

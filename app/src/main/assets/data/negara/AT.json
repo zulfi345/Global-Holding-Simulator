@@ -1,0 +1,17 @@
+{
+ "kode": "AT",
+ "nama": "Austria",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 560.0,
+ "pertumbuhan_pct": 0.8,
+ "inflasi_pct": 2.5,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 23.0,
+ "ppn_pct": 20.0,
+ "pajak_dividen_pct": 27.5,
+ "upah_min_bulanan_usd": 2500.0,
+ "populasi_juta": 9.2,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

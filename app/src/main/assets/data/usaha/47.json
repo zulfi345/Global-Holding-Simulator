@@ -1,0 +1,28 @@
+{
+ "id": 47,
+ "nama": "Pengembang perumahan",
+ "kelompok": "G",
+ "arketipe": "properti_konstruksi",
+ "modal_min_usd": 15000000.0,
+ "hpp_pct": 65.0,
+ "biaya_operasi_pct": 10.0,
+ "penyusutan_pct": 1.0,
+ "pekerja_min": 40,
+ "izin": [
+  "izin lokasi",
+  "PBG",
+  "AMDAL"
+ ],
+ "risiko": [
+  "suku bunga KPR",
+  "harga tanah",
+  "perizinan lambat"
+ ],
+ "kpi": [
+  "presales",
+  "biaya per m2",
+  "margin proyek"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

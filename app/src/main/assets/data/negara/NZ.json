@@ -1,0 +1,17 @@
+{
+ "kode": "NZ",
+ "nama": "Selandia Baru",
+ "mata_uang": "NZD",
+ "pdb_usd_miliar": 280.0,
+ "pertumbuhan_pct": 2.5,
+ "inflasi_pct": 2.5,
+ "bunga_acuan_pct": 2.25,
+ "kurs_per_usd": 1.72,
+ "pph_badan_pct": 28.0,
+ "ppn_pct": 15.0,
+ "pajak_dividen_pct": 15.0,
+ "upah_min_bulanan_usd": 2360.0,
+ "populasi_juta": 5.3,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

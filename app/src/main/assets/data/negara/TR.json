@@ -1,0 +1,17 @@
+{
+ "kode": "TR",
+ "nama": "Turki",
+ "mata_uang": "TRY",
+ "pdb_usd_miliar": 1450.0,
+ "pertumbuhan_pct": 3.5,
+ "inflasi_pct": 30.0,
+ "bunga_acuan_pct": 36.0,
+ "kurs_per_usd": 45.0,
+ "pph_badan_pct": 25.0,
+ "ppn_pct": 20.0,
+ "pajak_dividen_pct": 10.0,
+ "upah_min_bulanan_usd": 620.0,
+ "populasi_juta": 87.0,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

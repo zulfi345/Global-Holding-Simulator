@@ -1,0 +1,17 @@
+{
+ "kode": "EE",
+ "nama": "Estonia",
+ "mata_uang": "EUR",
+ "pdb_usd_miliar": 45.0,
+ "pertumbuhan_pct": 1.5,
+ "inflasi_pct": 3.5,
+ "bunga_acuan_pct": 2.0,
+ "kurs_per_usd": 0.87,
+ "pph_badan_pct": 22.0,
+ "ppn_pct": 24.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 1020.0,
+ "populasi_juta": 1.4,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

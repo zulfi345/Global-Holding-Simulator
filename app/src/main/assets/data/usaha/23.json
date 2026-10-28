@@ -1,0 +1,27 @@
+{
+ "id": 23,
+ "nama": "Elektronik",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 20000000.0,
+ "hpp_pct": 75.0,
+ "biaya_operasi_pct": 12.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 500,
+ "izin": [
+  "izin industri",
+  "sertifikasi produk"
+ ],
+ "risiko": [
+  "pasokan komponen",
+  "siklus produk",
+  "tarif"
+ ],
+ "kpi": [
+  "yield",
+  "biaya per unit",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

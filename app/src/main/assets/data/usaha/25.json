@@ -1,0 +1,28 @@
+{
+ "id": 25,
+ "nama": "Makanan olahan",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 2000000.0,
+ "hpp_pct": 65.0,
+ "biaya_operasi_pct": 20.0,
+ "penyusutan_pct": 3.0,
+ "pekerja_min": 50,
+ "izin": [
+  "izin edar BPOM",
+  "sertifikat halal",
+  "izin industri"
+ ],
+ "risiko": [
+  "harga bahan baku",
+  "keamanan pangan",
+  "persaingan merek"
+ ],
+ "kpi": [
+  "biaya per unit",
+  "utilisasi",
+  "margin bersih"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

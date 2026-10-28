@@ -1,0 +1,29 @@
+{
+ "id": 35,
+ "nama": "Bank komersial",
+ "kelompok": "E",
+ "arketipe": "finansial",
+ "modal_min_usd": 100000000.0,
+ "hpp_pct": 45.0,
+ "biaya_operasi_pct": 30.0,
+ "penyusutan_pct": 2.0,
+ "pekerja_min": 200,
+ "izin": [
+  "izin bank OJK",
+  "modal inti minimum",
+  "rasio CAR"
+ ],
+ "risiko": [
+  "kredit macet",
+  "risiko likuiditas",
+  "perubahan suku bunga"
+ ],
+ "kpi": [
+  "NIM",
+  "NPL",
+  "CAR",
+  "LDR"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

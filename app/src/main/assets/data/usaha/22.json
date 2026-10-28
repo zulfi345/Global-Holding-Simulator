@@ -1,0 +1,28 @@
+{
+ "id": 22,
+ "nama": "Otomotif",
+ "kelompok": "C",
+ "arketipe": "manufaktur",
+ "modal_min_usd": 300000000.0,
+ "hpp_pct": 80.0,
+ "biaya_operasi_pct": 10.0,
+ "penyusutan_pct": 4.0,
+ "pekerja_min": 1500,
+ "izin": [
+  "izin industri",
+  "homologasi",
+  "AMDAL"
+ ],
+ "risiko": [
+  "siklus permintaan",
+  "rantai pasok",
+  "transisi kendaraan listrik"
+ ],
+ "kpi": [
+  "utilisasi",
+  "biaya per unit",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

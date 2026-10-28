@@ -1,0 +1,28 @@
+{
+ "id": 5,
+ "nama": "Bauksit & aluminium",
+ "kelompok": "A",
+ "arketipe": "tambang_energi",
+ "modal_min_usd": 30000000.0,
+ "hpp_pct": 60.0,
+ "biaya_operasi_pct": 10.0,
+ "penyusutan_pct": 8.0,
+ "pekerja_min": 180,
+ "izin": [
+  "IUP",
+  "AMDAL",
+  "izin pengolahan"
+ ],
+ "risiko": [
+  "harga aluminium",
+  "biaya listrik",
+  "larangan ekspor bijih"
+ ],
+ "kpi": [
+  "biaya per ton",
+  "utilisasi",
+  "margin EBITDA"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

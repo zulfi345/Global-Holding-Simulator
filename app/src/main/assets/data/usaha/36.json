@@ -1,0 +1,29 @@
+{
+ "id": 36,
+ "nama": "Bank digital",
+ "kelompok": "E",
+ "arketipe": "finansial",
+ "modal_min_usd": 100000000.0,
+ "hpp_pct": 40.0,
+ "biaya_operasi_pct": 35.0,
+ "penyusutan_pct": 2.0,
+ "pekerja_min": 80,
+ "izin": [
+  "izin bank OJK",
+  "modal inti minimum",
+  "rasio CAR"
+ ],
+ "risiko": [
+  "biaya akuisisi nasabah",
+  "kredit macet",
+  "fraud"
+ ],
+ "kpi": [
+  "NIM",
+  "NPL",
+  "CAR",
+  "biaya per nasabah"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

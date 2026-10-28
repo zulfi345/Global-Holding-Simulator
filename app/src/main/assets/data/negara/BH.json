@@ -1,0 +1,17 @@
+{
+ "kode": "BH",
+ "nama": "Bahrain",
+ "mata_uang": "BHD",
+ "pdb_usd_miliar": 48.0,
+ "pertumbuhan_pct": 3.0,
+ "inflasi_pct": 1.5,
+ "bunga_acuan_pct": 5.0,
+ "kurs_per_usd": 0.376,
+ "pph_badan_pct": 0.0,
+ "ppn_pct": 10.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 700.0,
+ "populasi_juta": 1.6,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

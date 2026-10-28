@@ -1,0 +1,17 @@
+{
+ "kode": "NO",
+ "nama": "Norwegia",
+ "mata_uang": "NOK",
+ "pdb_usd_miliar": 520.0,
+ "pertumbuhan_pct": 1.5,
+ "inflasi_pct": 3.0,
+ "bunga_acuan_pct": 3.75,
+ "kurs_per_usd": 10.2,
+ "pph_badan_pct": 22.0,
+ "ppn_pct": 25.0,
+ "pajak_dividen_pct": 25.0,
+ "upah_min_bulanan_usd": 3500.0,
+ "populasi_juta": 5.6,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

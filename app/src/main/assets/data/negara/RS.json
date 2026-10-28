@@ -1,0 +1,17 @@
+{
+ "kode": "RS",
+ "nama": "Serbia",
+ "mata_uang": "RSD",
+ "pdb_usd_miliar": 85.0,
+ "pertumbuhan_pct": 3.5,
+ "inflasi_pct": 3.5,
+ "bunga_acuan_pct": 5.5,
+ "kurs_per_usd": 102.0,
+ "pph_badan_pct": 15.0,
+ "ppn_pct": 20.0,
+ "pajak_dividen_pct": 20.0,
+ "upah_min_bulanan_usd": 400.0,
+ "populasi_juta": 6.6,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

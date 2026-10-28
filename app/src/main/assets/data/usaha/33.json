@@ -1,0 +1,27 @@
+{
+ "id": 33,
+ "nama": "Game & hiburan digital",
+ "kelompok": "D",
+ "arketipe": "teknologi",
+ "modal_min_usd": 1000000.0,
+ "hpp_pct": 30.0,
+ "biaya_operasi_pct": 50.0,
+ "penyusutan_pct": 3.0,
+ "pekerja_min": 15,
+ "izin": [
+  "izin PSE",
+  "klasifikasi konten"
+ ],
+ "risiko": [
+  "hit atau flop",
+  "biaya akuisisi pemain",
+  "regulasi konten"
+ ],
+ "kpi": [
+  "DAU",
+  "ARPU",
+  "retensi"
+ ],
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

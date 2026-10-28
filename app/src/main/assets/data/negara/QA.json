@@ -1,0 +1,17 @@
+{
+ "kode": "QA",
+ "nama": "Qatar",
+ "mata_uang": "QAR",
+ "pdb_usd_miliar": 230.0,
+ "pertumbuhan_pct": 3.0,
+ "inflasi_pct": 1.0,
+ "bunga_acuan_pct": 4.25,
+ "kurs_per_usd": 3.64,
+ "pph_badan_pct": 10.0,
+ "ppn_pct": 0.0,
+ "pajak_dividen_pct": 0.0,
+ "upah_min_bulanan_usd": 275.0,
+ "populasi_juta": 3.1,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}
