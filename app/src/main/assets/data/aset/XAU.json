@@ -1,0 +1,13 @@
+{
+ "kode": "XAU",
+ "nama": "Emas (baris contoh skema; harga awal wajib diganti data bertanggal)",
+ "jenis": "komoditas",
+ "negara": "GLOBAL",
+ "mata_uang": "USD",
+ "harga_awal_usd": 4000.0,
+ "volatilitas_tahunan_pct": 15.0,
+ "imbal_pct": 0.0,
+ "ukuran_lot": 1,
+ "tanggal_data": "2026-10",
+ "perkiraan": true
+}

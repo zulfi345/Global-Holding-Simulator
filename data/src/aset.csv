@@ -1,0 +1,2 @@
+kode,nama,jenis,negara,mata_uang,harga_awal_usd,volatilitas_tahunan_pct,imbal_pct,ukuran_lot,tanggal_data,perkiraan
+XAU,Emas (baris contoh skema; harga awal wajib diganti data bertanggal),komoditas,GLOBAL,USD,4000,15,0,1,2026-10,true

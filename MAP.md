@@ -28,3 +28,19 @@
 - domain/usaha/StrategiFinansial.kt | NIM, cadangan NPL, CAR (bank tanpa bahan baku) | memakai ArketipeUsaha; diuji StrategiFinansialTest; dipakai ArketipeRegistry
 - domain/usaha/StrategiTambangEnergi.kt | royalti, deplesi, harga komoditas | memakai ArketipeUsaha; diuji StrategiTambangEnergiTest; dipakai ArketipeRegistry
 - test/.../usaha/ArketipeUsahaTestData.kt | helper pembuat Usaha untuk uji | dipakai uji strategi
+- domain/usaha/StrategiPertanian.kt | musim panen, risiko cuaca/hama | memakai ArketipeUsaha; diuji StrategiPertanianTest; dipakai ArketipeRegistry
+- domain/usaha/HargaKomoditas.kt | tick harga komoditas bersama | dipakai StrategiTambangEnergi, StrategiPertanian
+- domain/usaha/StrategiManufaktur.kt | kapasitas, utilisasi, biaya tetap vs variabel, titik impas | memakai ArketipeUsaha; diuji StrategiManufakturTest; dipakai ArketipeRegistry
+- domain/usaha/StrategiTeknologi.kt | pelanggan, churn, pendapatan berulang, R&D | memakai ArketipeUsaha; diuji StrategiTeknologiTest; dipakai ArketipeRegistry
+- domain/usaha/StrategiLogistik.kt | armada, utilisasi muatan, bahan bakar | memakai ArketipeUsaha; diuji StrategiLogistikTest; dipakai ArketipeRegistry
+- domain/usaha/StrategiPropertiKonstruksi.kt | okupansi, sewa, progres proyek | memakai ArketipeUsaha; diuji StrategiPropertiKonstruksiTest; dipakai ArketipeRegistry
+- domain/usaha/StrategiRitelJasa.kt | lalu lintas, konversi, transaksi, perputaran stok | memakai ArketipeUsaha; diuji StrategiRitelJasaTest; dipakai ArketipeRegistry
+- domain/usaha/StrategiLayananRegulasi.kt | tarif teregulasi, kepatuhan, lisensi | memakai ArketipeUsaha; diuji StrategiLayananRegulasiTest; dipakai ArketipeRegistry
+- domain/sdm/Kandidat.kt | bidang, jabatan eksekutif, kandidat, biaya rekrutmen | berdiri sendiri; diuji KandidatTest; nanti dipakai Penggajian/jabatan
+- domain/sdm/Penggajian.kt | upah minimum, biaya karyawan, pesangon | memakai data/Negara; diuji PenggajianTest
+- domain/sdm/Turnover.kt | turnover bulanan, masa percobaan, pelatihan | berdiri sendiri; diuji TurnoverTest
+- domain/sdm/Otomatisasi.kt | jabatan terisi mengotomasi operasional, efisiensi | memakai sdm/Kandidat; diuji OtomatisasiTest
+- domain/sdm/Kompensasi.kt | bonus, opsi saham, total kompensasi eksekutif | berdiri sendiri; diuji KompensasiTest
+- domain/sdm/HubunganKerja.kt | kepuasan, risiko mogok serikat, biaya mogok | berdiri sendiri; diuji HubunganKerjaTest
+- data/src/aset.csv | sumber data aset (saham, komoditas, dst) | -> tools/gen_aset.py -> assets/data/aset/<kode>.json
+- tools/gen_aset.py | CSV->JSON aset + validasi | memakai data/src/aset.csv

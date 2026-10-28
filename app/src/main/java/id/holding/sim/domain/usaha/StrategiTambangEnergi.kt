@@ -37,9 +37,6 @@ class StrategiTambangEnergi(val royaltiPct: Double = 5.0) : ArketipeUsaha {
         kecepatanKembali: Double = 0.1,
         volatilitasPct: Double = 5.0
     ): Double {
-        val noise = acak.nextDouble() * 2.0 - 1.0
-        val perubahan = kecepatanKembali * (rataJangkaPanjang - harga) / rataJangkaPanjang +
-            volatilitasPct / 100.0 * noise
-        return (harga * (1.0 + perubahan)).coerceAtLeast(0.05 * rataJangkaPanjang)
+        return HargaKomoditas.tick(harga, rataJangkaPanjang, acak, kecepatanKembali, volatilitasPct)
     }
 }

@@ -42,6 +42,13 @@ object ArketipeRegistry {
         return when (a) {
             Arketipe.FINANSIAL -> StrategiFinansial()
             Arketipe.TAMBANG_ENERGI -> StrategiTambangEnergi()
+            Arketipe.PERTANIAN -> StrategiPertanian()
+            Arketipe.MANUFAKTUR -> StrategiManufaktur()
+            Arketipe.TEKNOLOGI -> StrategiTeknologi()
+            Arketipe.LOGISTIK -> StrategiLogistik()
+            Arketipe.PROPERTI_KONSTRUKSI -> StrategiPropertiKonstruksi()
+            Arketipe.RITEL_JASA -> StrategiRitelJasa()
+            Arketipe.LAYANAN_REGULASI -> StrategiLayananRegulasi()
             else -> StrategiPersen(a, punyaBahanBaku = true)
         }
     }
