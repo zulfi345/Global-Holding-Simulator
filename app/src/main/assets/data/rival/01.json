@@ -1,0 +1,16 @@
+{
+ "id": 1,
+ "nama": "Apple",
+ "sektor": "teknologi perangkat",
+ "negara": "US",
+ "status": "publik",
+ "arketipe_utama": "teknologi",
+ "tanggal_data": "2026-10",
+ "perkiraan": true,
+ "kapitalisasi_usd_miliar": 4870.0,
+ "pendapatan_usd_miliar": 416.0,
+ "margin_bersih_pct": 27.0,
+ "utang_usd_miliar": 100.0,
+ "sumber_kapitalisasi": "investingcube.com 2026-10-05 (dibulatkan)",
+ "catatan_angka": "perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+}

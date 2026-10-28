@@ -1,0 +1,16 @@
+{
+ "id": 7,
+ "nama": "Tesla",
+ "sektor": "kendaraan listrik",
+ "negara": "US",
+ "status": "publik",
+ "arketipe_utama": "manufaktur",
+ "tanggal_data": "2026-10",
+ "perkiraan": true,
+ "kapitalisasi_usd_miliar": null,
+ "pendapatan_usd_miliar": 95.0,
+ "margin_bersih_pct": 4.0,
+ "utang_usd_miliar": 8.0,
+ "sumber_kapitalisasi": "",
+ "catatan_angka": "perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+}

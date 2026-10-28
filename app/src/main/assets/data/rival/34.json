@@ -1,0 +1,16 @@
+{
+ "id": 34,
+ "nama": "Cargill",
+ "sektor": "agribisnis & komoditas",
+ "negara": "US",
+ "status": "tertutup",
+ "arketipe_utama": "pertanian",
+ "tanggal_data": "2026-10",
+ "perkiraan": true,
+ "kapitalisasi_usd_miliar": null,
+ "pendapatan_usd_miliar": null,
+ "margin_bersih_pct": null,
+ "utang_usd_miliar": null,
+ "sumber_kapitalisasi": "",
+ "catatan_angka": ""
+}

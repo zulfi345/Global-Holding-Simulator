@@ -1,0 +1,16 @@
+{
+ "id": 26,
+ "nama": "Unilever",
+ "sektor": "barang konsumsi",
+ "negara": "GB",
+ "status": "publik",
+ "arketipe_utama": "manufaktur",
+ "tanggal_data": "2026-10",
+ "perkiraan": true,
+ "kapitalisasi_usd_miliar": null,
+ "pendapatan_usd_miliar": 63.0,
+ "margin_bersih_pct": 11.0,
+ "utang_usd_miliar": 35.0,
+ "sumber_kapitalisasi": "",
+ "catatan_angka": "perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+}

@@ -11,8 +11,8 @@ object StockSplit {
     /** rasio harus > 0. rasio 2.0 = split 1:2 (unit x2, harga /2); rasio 0.5 = reverse split 2:1. */
     fun terapkan(posisi: Kepemilikan, rasio: Double): Kepemilikan {
         require(rasio > 0.0) { "rasio split harus > 0" }
-        val unitBaru = floor(posisi.unit * rasio).toInt()
-        val hargaRataRataBaru = if (unitBaru == 0) 0.0 else posisi.hargaRataRata / rasio
+        val unitBaru = floor(posisi.unit * rasio)
+        val hargaRataRataBaru = if (unitBaru == 0.0) 0.0 else posisi.hargaRataRata / rasio
         return posisi.copy(unit = unitBaru, hargaRataRata = hargaRataRataBaru)
     }
 }

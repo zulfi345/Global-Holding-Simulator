@@ -1,0 +1,16 @@
+{
+ "id": 8,
+ "nama": "TSMC",
+ "sektor": "pengecoran semikonduktor",
+ "negara": "TW",
+ "status": "publik",
+ "arketipe_utama": "manufaktur",
+ "tanggal_data": "2026-10",
+ "perkiraan": true,
+ "kapitalisasi_usd_miliar": 2450.0,
+ "pendapatan_usd_miliar": 120.0,
+ "margin_bersih_pct": 40.0,
+ "utang_usd_miliar": 25.0,
+ "sumber_kapitalisasi": "investingcube.com 2026-10-05 (dibulatkan)",
+ "catatan_angka": "perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2,
+ "nama": "Microsoft",
+ "sektor": "perangkat lunak & cloud",
+ "negara": "US",
+ "status": "publik",
+ "arketipe_utama": "teknologi",
+ "tanggal_data": "2026-10",
+ "perkiraan": true,
+ "kapitalisasi_usd_miliar": 3840.0,
+ "pendapatan_usd_miliar": 282.0,
+ "margin_bersih_pct": 36.0,
+ "utang_usd_miliar": 60.0,
+ "sumber_kapitalisasi": "investingcube.com 2026-10-05 (dibulatkan)",
+ "catatan_angka": "perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+}

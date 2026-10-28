@@ -1,5 +1,5 @@
 # PROGRESS
-Terakhir: M-058 selesai | Berikut: M-059
+Terakhir: M-076 selesai | Berikut: M-077
 
 ## Aturan sesi
 1. Baca file ini lalu MAP.md saja. Detail realisme ada di PROMPT_MASTER.md (di ZIP_LENGKAP); baca bagian yang relevan HANYA jika perlu.
@@ -36,7 +36,25 @@ Terakhir: M-058 selesai | Berikut: M-059
 - [x] M-056 (F8, saham) domain/engine/DividenCumEx.kt: berhakDividen(bulanBeli,bulanCum,bulanJual=null) granularitas bulanan (bukan tanggal harian) -> berhak jika beli<=cum DAN (tidak dijual ATAU jual>cum; jual PADA bulanCum = ex-date, tidak berhak) + DividenCumExTest (6 uji); belum dikompilasi
 - [x] M-057 (F8, saham SELESAI: lot+biaya+ARA/ARB+cum/ex+split+spread) domain/engine/SpreadBidAsk.kt: hargaBeli(ask)=hargaTengah x (1+spreadPct/200), hargaJual(bid)=hargaTengah x (1-spreadPct/200), half-spread tiap sisi + SpreadBidAskTest (5 uji); belum dikompilasi
 - [x] M-058 (F8, obligasi) domain/engine/Obligasi.kt: kuponTahunan(nilaiPar,kuponPct), kuponPerPeriode(...,periodePerTahun), currentYieldPct(kuponTahunan,hargaPasar)=kupon/harga x100 + ObligasiTest (6 uji); belum dikompilasi. Belum: YTM, durasi
-- [ ] M-059 (F8, obligasi) Obligasi.kt tambahan: ytmPerkiraanPct(kuponTahunan,nilaiPar,hargaPasar,sisaTahun) = (C+(F-P)/n)/((F+P)/2) x100, rumus aproksimasi YTM standar (bukan iteratif presisi) + uji tambahan
+- [x] M-059 (F8, obligasi) Obligasi.ytmPerkiraanPct = (C+(F-P)/n)/((F+P)/2) x100, aproksimasi (bukan iteratif), require P,F,n>0 + 4 uji; belum dikompilasi
+- [x] M-060 (F8, obligasi SELESAI: kupon+yield+YTM+durasi) Obligasi.hargaDariYtm (kupon tahunan, sisaTahun Int), durasiMacaulay, durasiModifikasi=Mac/(1+y) + 5 uji; nilai uji diverifikasi dengan Python; belum dikompilasi
+- [x] M-061 (F8, deposito) domain/engine/Deposito.kt: bungaBruto (sederhana), jatuhTempo, pencairanDini (bunga sebagian, penalti % bunga, pokok utuh); HasilDeposito; pajak & penalti = parameter desain game + DepositoTest (6 uji); belum dikompilasi
+- [x] M-062 (F8, reksa dana/ETF) domain/engine/ReksaDana.kt: navPerUnit, unitDariSubscribe, danaDariRedeem, navSetelahBiayaBulanan (biaya = parameter desain) + ReksaDanaTest (6 uji); belum dikompilasi
+- [x] M-063 (F8, kripto) domain/engine/Kripto.kt: beliDenganDana/jual dengan unit pecahan Double, biaya % + biaya jaringan tetap (desain game), HasilKripto + KriptoTest (6 uji). Catatan: Kepemilikan.unit bertipe Int, posisi pecahan belum bisa disimpan; belum dikompilasi
+- [x] M-064 (F8, kripto SELESAI) Kepemilikan.unit Int->Double; Portofolio.tambahBeliKripto/kurangiJualKripto (EPS_UNIT 1e-12 hindari residu); StockSplit floor tetap (Double); ImbalAset tak berubah; uji lama disesuaikan (literal Double) + 3 uji baru di PortofolioTest; belum dikompilasi
+- [x] M-065 (F8, properti) domain/engine/Properti.kt: nilaiSetelahBulan (majemuk, pangkat bulan/12), totalBeli, bersihJual, biayaPemilikanBulanan, hargaJualCepat (diskon likuiditas); parameter = desain game; sewa lewat ImbalAset + PropertiTest (8 uji); belum dikompilasi
+- [x] M-066 (F8, margin) domain/engine/Margin.kt: pinjamanDiperlukan, ekuitas, rasioMarginPct, kenaMarginCall (maintenance 25), danaTambahan, harusDilikuidasi (10), likuidasi -> HasilLikuidasi(diterima,kekurangan,biaya), bungaPinjamanBulanan; semua ambang = desain game + MarginTest (11 uji); belum dikompilasi
+- [x] M-067 (F9, kredit) domain/engine/Kredit.kt: bungaPinjamanPct (acuan+premi), cicilanBulanan (PMT, bunga 0 -> bagi rata), jadwal (BarisCicilan; sisa akhir tepat 0), totalBunga; angka uji dari Python + KreditTest (9 uji); belum dikompilasi
+- [x] M-068 (F9, premi risiko) domain/engine/PremiRisiko.kt: der/interestCoverage/currentRatio (penyebut<=0 -> tak hingga), poin 0..3 per rasio, premiPct = totalPoin x 0.75 (0..6.75), peringkat A..D; ambang = desain game + PremiRisikoTest (10 uji); belum dikompilasi
+- [x] M-069 (F9, gagal bayar) domain/engine/GagalBayar.kt: dendaKeterlambatan (2%), status (LANCAR/MENUNGGAK/GAGAL_BAYAR, batas 3 bulan), restrukturisasi (biaya 1% ke pokok, tenor harus lebih panjang, cicilan via Kredit.cicilanBulanan) + GagalBayarTest (9 uji; cicilan uji dari Python); belum dikompilasi
+- [x] M-070 (F9, obligasi korporasi) domain/engine/ObligasiKorporasi.kt: terbitkan (kupon=acuan+premi, biaya penerbitan 1%, dijual par), jadwalPembayaran (bullet: pokok di tahun terakhir), biayaDanaEfektifPct (via Obligasi.ytmPerkiraanPct) + ObligasiKorporasiTest (8 uji); belum dikompilasi
+- [x] M-071 (F9, kredit valas) domain/engine/KreditValas.kt: danaRupiah, cicilanRupiah (PMT USD x kurs), cicilanRupiahPerBulan (kurs per bulan), labaRugiSelisihKurs = sisaUsd x (kursAwal-kursKini); kurs diberikan pemanggil (rupiah/USD); hedging belum + KreditValasTest (8 uji, angka dari Python); belum dikompilasi
+- [x] M-072 (F9, covenant) domain/engine/Covenant.kt: Covenant(derMaks 3, coverageMin 2, currentRatioMin 1), CovenantEngine.periksa (batas tepat = aman), akibat (0 AMAN/1 BUNGA_NAIK/>=2 WAJIB_LUNAS), bungaSetelahPemeriksaan (+1%) + CovenantTest (9 uji); belum dikompilasi
+- [x] M-073 (F9 SELESAI) domain/engine/Pendanaan.kt: UtangPerusahaan(nama,jenis,sisaPokok,bunga%,sisaTenorBulan), totalUtang (-> Neraca.utangBank), bebanBungaBulanan (x12 -> LaporanLabaRugi.biayaBunga), bungaRataRataPct, jatuhTempoTerdekatBulan, jatuhTempoDalam + PendanaanTest (7 uji); belum menyentuh Neraca/LabaRugi (hanya pembungkus); belum dikompilasi
+- [x] M-074 (F10) data/src/rival.csv (60 rival Lampiran B: id,nama,sektor,negara,status,arketipe_utama,tanggal_data,perkiraan; 4 tertutup: Cargill, Koch, Djarum, Wings; Golden Agri=SG, Shell/Unilever/Rio=GB) + tools/gen_rival.py (validasi 60 baris/id/arketipe/negara/status; diuji lokal) -> 60 JSON di assets/data/rival; belum ada angka keuangan
+- [x] M-075..M-076 (F10, id1-30) rival.csv +kolom kapitalisasi_usd_miliar,pendapatan_usd_miliar,margin_bersih_pct,utang_usd_miliar,sumber_kapitalisasi,catatan_angka (boleh kosong -> null); gen_rival.py parse+validasi. Kapitalisasi hanya id1-6,8 (investingcube.com 2026-10-05); lainnya kosong (tak ada sumber; companiesmarketcap tak boleh diakses). Pendapatan/margin/utang = perkiraan kasar dari pengetahuan model, belum diverifikasi (Glencore margin kosong; Toyota/VW utang termasuk pembiayaan)
+- [ ] M-077..M-078 (F10; 077=id31-45, 078=46-60) isi kolom angka yang sama; Indonesia: angka dalam USD (kurs ~17.900 IDR/USD); kapitalisasi hanya bila ada sumber; tidak tahu -> kosong; tertutup: valuasi = pendapatan x multiple sektor (catat di catatan_angka)
+- [ ] M-079 (F10) data/Rival.kt + RivalLoader.kt (pola Usaha.kt/UsahaLoader.kt); lalu mesin valuasi, AI aturan, akuisisi 2 arah (definisikan setelah M-079)
 
 ## Bug diketahui
 (Build GitHub terbukti berhasil sampai M-012; layar ranking PDB tampil di HP. Jika build gagal, tempel log error.)

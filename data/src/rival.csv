@@ -1,0 +1,61 @@
+id,nama,sektor,negara,status,arketipe_utama,tanggal_data,perkiraan,kapitalisasi_usd_miliar,pendapatan_usd_miliar,margin_bersih_pct,utang_usd_miliar,sumber_kapitalisasi,catatan_angka
+1,Apple,teknologi perangkat,US,publik,teknologi,2026-10,true,4870,416,27,100,investingcube.com 2026-10-05 (dibulatkan),"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+2,Microsoft,perangkat lunak & cloud,US,publik,teknologi,2026-10,true,3840,282,36,60,investingcube.com 2026-10-05 (dibulatkan),"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+3,Nvidia,semikonduktor,US,publik,teknologi,2026-10,true,5650,216,55,9,investingcube.com 2026-10-05 (dibulatkan),"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+4,Alphabet,internet & iklan,US,publik,teknologi,2026-10,true,4160,403,32,45,investingcube.com 2026-10-05 (dibulatkan),"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+5,Amazon,e-commerce & cloud,US,publik,ritel_jasa,2026-10,true,2710,717,11,130,investingcube.com 2026-10-05 (dibulatkan),"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+6,Meta Platforms,media sosial,US,publik,teknologi,2026-10,true,1850,200,30,30,investingcube.com 2026-10-05 (dibulatkan),"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+7,Tesla,kendaraan listrik,US,publik,manufaktur,2026-10,true,,95,4,8,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+8,TSMC,pengecoran semikonduktor,TW,publik,manufaktur,2026-10,true,2450,120,40,25,investingcube.com 2026-10-05 (dibulatkan),"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+9,Samsung Electronics,elektronik & semikonduktor,KR,publik,manufaktur,2026-10,true,,230,9,20,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+10,Tencent,internet & gim,CN,publik,teknologi,2026-10,true,,105,29,50,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+11,Alibaba,e-commerce & cloud,CN,publik,ritel_jasa,2026-10,true,,140,12,50,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+12,ASML,peralatan semikonduktor,NL,publik,manufaktur,2026-10,true,,38,28,5,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+13,Berkshire Hathaway,konglomerasi keuangan,US,publik,finansial,2026-10,true,,370,20,130,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+14,JPMorgan Chase,perbankan,US,publik,finansial,2026-10,true,,180,30,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; utang bank: tidak relevan, dikosongkan"
+15,Visa,pembayaran,US,publik,finansial,2026-10,true,,40,50,20,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+16,ExxonMobil,minyak & gas,US,publik,tambang_energi,2026-10,true,,330,10,40,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+17,Shell,minyak & gas,GB,publik,tambang_energi,2026-10,true,,270,6,80,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+18,BHP,pertambangan,AU,publik,tambang_energi,2026-10,true,,52,17,18,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+19,Rio Tinto,pertambangan,GB,publik,tambang_energi,2026-10,true,,54,17,15,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+20,Glencore,pertambangan & perdagangan komoditas,CH,publik,tambang_energi,2026-10,true,,230,,30,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; margin dikosongkan (laba sangat berfluktuasi)"
+21,Toyota,otomotif,JP,publik,manufaktur,2026-10,true,,310,9,230,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; utang termasuk anak usaha pembiayaan"
+22,Volkswagen,otomotif,DE,publik,manufaktur,2026-10,true,,350,2,220,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; utang termasuk anak usaha pembiayaan"
+23,Nestlé,makanan & minuman,CH,publik,manufaktur,2026-10,true,,105,11,60,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+24,Procter & Gamble,barang konsumsi,US,publik,manufaktur,2026-10,true,,84,19,35,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+25,Coca-Cola,minuman,US,publik,manufaktur,2026-10,true,,47,25,45,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+26,Unilever,barang konsumsi,GB,publik,manufaktur,2026-10,true,,63,11,35,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+27,Walmart,ritel,US,publik,ritel_jasa,2026-10,true,,700,3,60,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+28,McDonald's,restoran cepat saji,US,publik,ritel_jasa,2026-10,true,,26,31,40,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+29,A.P. Møller-Maersk,pelayaran & logistik,DK,publik,logistik,2026-10,true,,55,8,25,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+30,Johnson & Johnson,kesehatan & farmasi,US,publik,manufaktur,2026-10,true,,90,28,40,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+31,Novo Nordisk,farmasi,DK,publik,manufaktur,2026-10,true,,,,,,
+32,Siemens,industri & otomasi,DE,publik,manufaktur,2026-10,true,,,,,,
+33,LVMH,barang mewah,FR,publik,ritel_jasa,2026-10,true,,,,,,
+34,Cargill,agribisnis & komoditas,US,tertutup,pertanian,2026-10,true,,,,,,
+35,Koch Industries,konglomerasi industri,US,tertutup,manufaktur,2026-10,true,,,,,,
+36,Bank Central Asia (BCA),perbankan,ID,publik,finansial,2026-10,true,,,,,,
+37,Astra International,otomotif & konglomerasi,ID,publik,manufaktur,2026-10,true,,,,,,
+38,Barito Pacific,petrokimia & energi,ID,publik,manufaktur,2026-10,true,,,,,,
+39,Amman Mineral,tambang tembaga & emas,ID,publik,tambang_energi,2026-10,true,,,,,,
+40,Chandra Asri,petrokimia,ID,publik,manufaktur,2026-10,true,,,,,,
+41,Indofood Sukses Makmur,makanan,ID,publik,manufaktur,2026-10,true,,,,,,
+42,Indofood CBP,makanan kemasan,ID,publik,manufaktur,2026-10,true,,,,,,
+43,Unilever Indonesia,barang konsumsi,ID,publik,manufaktur,2026-10,true,,,,,,
+44,Golden Agri-Resources (Sinar Mas),kelapa sawit,SG,publik,pertanian,2026-10,true,,,,,,
+45,Djarum Group,rokok & konglomerasi,ID,tertutup,manufaktur,2026-10,true,,,,,,
+46,Gudang Garam,rokok,ID,publik,manufaktur,2026-10,true,,,,,,
+47,HM Sampoerna,rokok,ID,publik,manufaktur,2026-10,true,,,,,,
+48,Kalbe Farma,farmasi,ID,publik,manufaktur,2026-10,true,,,,,,
+49,Mayora Indah,makanan & minuman,ID,publik,manufaktur,2026-10,true,,,,,,
+50,Wings Group,barang konsumsi,ID,tertutup,manufaktur,2026-10,true,,,,,,
+51,Alamtri Resources (ex-Adaro),batu bara & energi,ID,publik,tambang_energi,2026-10,true,,,,,,
+52,Medco Energi,minyak gas & listrik,ID,publik,tambang_energi,2026-10,true,,,,,,
+53,Bumi Resources,batu bara,ID,publik,tambang_energi,2026-10,true,,,,,,
+54,GoTo,teknologi & fintech,ID,publik,teknologi,2026-10,true,,,,,,
+55,Pakuwon Jati,properti & mal,ID,publik,properti_konstruksi,2026-10,true,,,,,,
+56,Ciputra Development,properti,ID,publik,properti_konstruksi,2026-10,true,,,,,,
+57,Lippo Karawaci,properti & kesehatan,ID,publik,properti_konstruksi,2026-10,true,,,,,,
+58,Charoen Pokphand Indonesia,pakan & unggas,ID,publik,pertanian,2026-10,true,,,,,,
+59,Japfa Comfeed,pakan & unggas,ID,publik,pertanian,2026-10,true,,,,,,
+60,Blue Bird,transportasi taksi,ID,publik,logistik,2026-10,true,,,,,,

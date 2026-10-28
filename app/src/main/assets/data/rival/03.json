@@ -1,0 +1,16 @@
+{
+ "id": 3,
+ "nama": "Nvidia",
+ "sektor": "semikonduktor",
+ "negara": "US",
+ "status": "publik",
+ "arketipe_utama": "teknologi",
+ "tanggal_data": "2026-10",
+ "perkiraan": true,
+ "kapitalisasi_usd_miliar": 5650.0,
+ "pendapatan_usd_miliar": 216.0,
+ "margin_bersih_pct": 55.0,
+ "utang_usd_miliar": 9.0,
+ "sumber_kapitalisasi": "investingcube.com 2026-10-05 (dibulatkan)",
+ "catatan_angka": "perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
+}

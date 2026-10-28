@@ -48,10 +48,24 @@
 - data/AsetLoader.kt | baca assets/data/aset/*.json | memakai Aset.kt; nanti dipanggil dari ui/
 - domain/engine/HargaAset.kt | tick harga bulanan aset (mean reversion + guncangan dari volatilitasTahunanPct) | dipakai nanti domain/engine/Portofolio.kt (mark-to-market); diuji HargaAsetTest
 - domain/engine/Investasi.kt | beli/jual generik (HasilTransaksiAset: lot, biaya broker, pajak transaksi) | memakai Aset.ukuranLot; dipakai domain/engine/Portofolio.kt; diuji InvestasiTest
-- domain/engine/Portofolio.kt | Kepemilikan per aset (average cost, laba/rugi belum terealisasi) | memakai HasilTransaksiAset dari Investasi.kt; dipakai domain/engine/ImbalAset.kt; diuji PortofolioTest
+- domain/engine/Portofolio.kt | Kepemilikan per aset, unit Double (average cost, laba/rugi belum terealisasi, varian kripto) | memakai HasilTransaksiAset dari Investasi.kt; dipakai domain/engine/ImbalAset.kt; diuji PortofolioTest
 - domain/engine/ImbalAset.kt | bayaran berkala generik (dividen/kupon/sewa) dari Aset.imbalPct atas nilai beli posisi | memakai Kepemilikan dari Portofolio.kt; diuji ImbalAsetTest
 - domain/engine/CircuitBreaker.kt | ARA/ARB flat 25% default, batasi & deteksi kena batas | dipakai nanti HargaAset.tick khusus jenis=saham; diuji CircuitBreakerTest
 - domain/engine/StockSplit.kt | terapkan split/reverse split ke Kepemilikan (nilai total tetap) | memakai Kepemilikan dari Portofolio.kt; diuji StockSplitTest
 - domain/engine/DividenCumEx.kt | kelayakan dividen dari bulanBeli/bulanCum/bulanJual (granularitas bulanan) | berdiri sendiri; diuji DividenCumExTest
 - domain/engine/SpreadBidAsk.kt | harga beli (ask) & jual (bid) dari harga tengah + spreadPct (half-spread) | berdiri sendiri; diuji SpreadBidAskTest
-- domain/engine/Obligasi.kt | kupon tahunan/per periode, current yield sederhana | berdiri sendiri; diuji ObligasiTest; nanti tambah YTM aproksimasi (M-059)
+- domain/engine/Obligasi.kt | kupon, current yield, YTM aproksimasi, harga dari YTM, durasi Macaulay/modifikasi | berdiri sendiri; diuji ObligasiTest
+- domain/engine/Deposito.kt | bunga sederhana, jatuh tempo, pencairan dini + penalti | berdiri sendiri; diuji DepositoTest
+- domain/engine/ReksaDana.kt | NAV per unit, subscribe/redeem + biaya, biaya pengelolaan bulanan | berdiri sendiri; diuji ReksaDanaTest
+- domain/engine/Kripto.kt | beli/jual kripto unit pecahan + biaya jaringan | dipakai Portofolio.tambahBeliKripto/kurangiJualKripto; diuji KriptoTest
+- domain/engine/Properti.kt | apresiasi majemuk, biaya beli/jual, biaya pemilikan, jual cepat | berdiri sendiri (sewa via ImbalAset); diuji PropertiTest
+- domain/engine/Margin.kt | leverage, rasio margin, margin call, likuidasi paksa, bunga pinjaman | berdiri sendiri; diuji MarginTest
+- domain/engine/Kredit.kt | cicilan anuitas (PMT), jadwal amortisasi, bunga = acuan + premi | berdiri sendiri; diuji KreditTest; nanti pakai PremiRisiko (M-068)
+- domain/engine/PremiRisiko.kt | rasio DER/ICR/CR -> poin -> premi risiko & peringkat A-D | berdiri sendiri; hasil premi untuk Kredit.bungaPinjamanPct; diuji PremiRisikoTest
+- domain/engine/GagalBayar.kt | denda, status tunggakan/gagal bayar, restrukturisasi | memakai Kredit.kt; diuji GagalBayarTest
+- domain/engine/ObligasiKorporasi.kt | terbitkan obligasi sendiri, jadwal bullet, biaya dana efektif | memakai Kredit.bungaPinjamanPct, Obligasi; premi dari PremiRisiko; diuji ObligasiKorporasiTest
+- domain/engine/KreditValas.kt | pinjaman USD: dana/cicilan rupiah, selisih kurs | memakai Kredit.kt; kurs dari MakroState.kursPerUsd (KursEngine); diuji KreditValasTest
+- domain/engine/Covenant.kt | cek syarat pinjaman (DER/coverage/CR), akibat, kenaikan bunga | memakai rasio PremiRisiko; diuji CovenantTest
+- domain/engine/Pendanaan.kt | ringkasan utang: total, beban bunga, bunga rata-rata, jatuh tempo | berdiri sendiri; hasil untuk Neraca.utangBank & LaporanLabaRugi.biayaBunga; diuji PendanaanTest
+- data/src/rival.csv | identitas + angka keuangan (opsional) 60 rival swasta (Lampiran B) | -> tools/gen_rival.py -> assets/data/rival/<id>.json; angka terisi bertahap M-075..078
+- tools/gen_rival.py | CSV->JSON rival + validasi | memakai data/src/rival.csv & negara.csv
