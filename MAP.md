@@ -44,3 +44,5 @@
 - domain/sdm/HubunganKerja.kt | kepuasan, risiko mogok serikat, biaya mogok | berdiri sendiri; diuji HubunganKerjaTest
 - data/src/aset.csv | sumber data aset (saham, komoditas, dst) | -> tools/gen_aset.py -> assets/data/aset/<kode>.json
 - tools/gen_aset.py | CSV->JSON aset + validasi | memakai data/src/aset.csv
+- data/Aset.kt | model data aset + dariJson | dipakai AsetLoader, nanti domain/engine/HargaAset & Investasi
+- data/AsetLoader.kt | baca assets/data/aset/*.json | memakai Aset.kt; nanti dipanggil dari ui/

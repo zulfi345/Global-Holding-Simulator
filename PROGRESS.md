@@ -1,5 +1,5 @@
 # PROGRESS
-Terakhir: M-048 selesai | Berikut: M-049
+Terakhir: M-049 selesai | Berikut: M-050
 
 ## Aturan sesi
 1. Baca file ini lalu MAP.md saja. Detail realisme ada di PROMPT_MASTER.md (di ZIP_LENGKAP); baca bagian yang relevan HANYA jika perlu.
@@ -51,7 +51,8 @@ Terakhir: M-048 selesai | Berikut: M-049
 - [x] M-046 (F7) domain/sdm/Kompensasi.kt (bonusKinerja target 20%/ambang 80%/batas 150%, nilaiOpsi intrinsik, opsiVested 48 bln + cliff 12 bln, totalTahunan; semua desain game/perkiraan) + KompensasiTest (4 uji); belum dikompilasi
 - [x] M-047 (F7 selesai) domain/sdm/HubunganKerja.kt (tickKepuasan 20%/bulan menuju target dari gaji vs median, peluangMogokBulananPct tanpa serikat = 0 maks 10% desain game, apakahMogok, biayaMogok) + HubunganKerjaTest (4 uji); belum dikompilasi
 - [x] M-048 (F8) data/src/aset.csv (kolom: kode,nama,jenis,negara,mata_uang,harga_awal_usd,volatilitas_tahunan_pct,imbal_pct,ukuran_lot,tanggal_data,perkiraan; jenis saham|komoditas|indeks|obligasi|kripto|properti; negara 2 huruf atau GLOBAL) + tools/gen_aset.py (validasi, diuji lokal) + JSON XAU. Baris XAU hanya CONTOH skema, harga 4000 bukan data nyata: isi aset sungguhan dari sumber bertanggal (perkiraan=true)
-- [ ] M-049 (F8) data/Aset.kt (model + dariJson) + data/AsetLoader.kt (muatSemua) mengikuti pola Usaha.kt/UsahaLoader.kt | 700
+- [x] M-049 (F8) data/Aset.kt (model + dariJson, field kode/nama/jenis/negara/mataUang/hargaAwalUsd/volatilitasTahunanPct/imbalPct/ukuranLot/tanggalData/perkiraan) + data/AsetLoader.kt (muatSemua, urut kode); pola identik Usaha.kt/UsahaLoader.kt; dariJson tidak diuji unit (sama seperti Usaha); belum dikompilasi
+- [ ] M-050 (F8) domain/engine/HargaAset.kt: tick harga bulanan per aset (mean reversion ke harga awal + guncangan skala volatilitasTahunanPct/12, pola dari HargaKomoditas.kt) + HargaAsetTest (acuan StrategiTambangEnergiTest/StrategiPertanianTest)
 
 ## Bug diketahui
 (Build GitHub terbukti berhasil sampai M-012; layar ranking PDB tampil di HP. Jika build gagal, tempel log error.)
