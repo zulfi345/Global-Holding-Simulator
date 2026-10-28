@@ -15,3 +15,5 @@
 - domain/engine/MakroEngine.kt | tick bulanan makro | memakai MakroState; diuji MakroEngineTest
 - test/.../MakroEngineTest.kt | uji deterministik, batas, mean reversion | memakai MakroEngine
 - domain/engine/KursEngine.kt | tick bulanan kurs per USD | memakai MakroState (lokal & AS); diuji KursEngineTest
+- domain/engine/PajakEngine.kt | PPh badan, PPN neto, pajak dividen | memakai data/Negara (tarif); diuji PajakEngineTest; nanti dipakai LabaRugi
+- domain/engine/LabaRugi.kt | laba rugi (kotor, EBITDA, EBIT, pajak, bersih) | memakai PajakEngine; diuji LabaRugiEngineTest; nanti memberi laba bersih ke Neraca

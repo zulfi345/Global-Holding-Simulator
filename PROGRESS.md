@@ -1,5 +1,5 @@
 # PROGRESS
-Terakhir: M-010 selesai | Berikut: M-011
+Terakhir: M-012 selesai | Berikut: M-013
 
 ## Aturan sesi
 1. Baca file ini lalu MAP.md saja. Detail realisme ada di PROMPT_MASTER.md (di ZIP_LENGKAP); baca bagian yang relevan HANYA jika perlu.
@@ -28,7 +28,10 @@ Terakhir: M-010 selesai | Berikut: M-011
 - [x] M-008 domain/engine/MakroState.kt (state makro + dari(Negara))
 - [x] M-009 domain/engine/MakroEngine.kt tickBulanan (mean reversion + guncangan, seed acak) + test/.../MakroEngineTest.kt (3 uji; numerik diverifikasi di Python, belum dikompilasi)
 - [x] M-010 domain/engine/KursEngine.kt (PPP parsial + selisih bunga riil + risk-off; US/SA/AE terpatok) + test/.../KursEngineTest.kt (4 uji; belum dikompilasi)
-- [ ] M-011 Pajak: model PajakNegara + hitung PPh badan & PPN dari Negara + uji | engine/PajakEngine.kt | 600
+- [x] M-011 domain/engine/PajakEngine.kt (pphBadan + rugi fiskal 100% tanpa batas waktu, ppnNeto, pajakDividen) + PajakEngineTest (6 uji; belum dikompilasi). Belum: bea masuk/ekspor, pajak karbon/properti, insentif (perlu kolom data baru)
+- [x] M-012 domain/engine/LabaRugi.kt (LaporanLabaRugi + LabaRugiEngine.hitung; hpp bank = biaya dana) + LabaRugiEngineTest (3 uji; belum dikompilasi)
+- [ ] M-013 Akuntansi: Neraca.kt (kas, piutang, persediaan, aset tetap; utang usaha, utang bank; modal, laba ditahan; aset = liabilitas + ekuitas, fungsi cek seimbang) + uji | boleh sentuh: engine/Neraca.kt + test | 700
+- [ ] M-014 Akuntansi: ArusKas.kt (operasi/investasi/pendanaan) + uji | 700
 
 ## Bug diketahui
 (Build GitHub belum diuji sama sekali. Jika gagal, tempel log error.)
