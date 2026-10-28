@@ -46,3 +46,12 @@
 - tools/gen_aset.py | CSV->JSON aset + validasi | memakai data/src/aset.csv
 - data/Aset.kt | model data aset + dariJson | dipakai AsetLoader, nanti domain/engine/HargaAset & Investasi
 - data/AsetLoader.kt | baca assets/data/aset/*.json | memakai Aset.kt; nanti dipanggil dari ui/
+- domain/engine/HargaAset.kt | tick harga bulanan aset (mean reversion + guncangan dari volatilitasTahunanPct) | dipakai nanti domain/engine/Portofolio.kt (mark-to-market); diuji HargaAsetTest
+- domain/engine/Investasi.kt | beli/jual generik (HasilTransaksiAset: lot, biaya broker, pajak transaksi) | memakai Aset.ukuranLot; dipakai domain/engine/Portofolio.kt; diuji InvestasiTest
+- domain/engine/Portofolio.kt | Kepemilikan per aset (average cost, laba/rugi belum terealisasi) | memakai HasilTransaksiAset dari Investasi.kt; dipakai domain/engine/ImbalAset.kt; diuji PortofolioTest
+- domain/engine/ImbalAset.kt | bayaran berkala generik (dividen/kupon/sewa) dari Aset.imbalPct atas nilai beli posisi | memakai Kepemilikan dari Portofolio.kt; diuji ImbalAsetTest
+- domain/engine/CircuitBreaker.kt | ARA/ARB flat 25% default, batasi & deteksi kena batas | dipakai nanti HargaAset.tick khusus jenis=saham; diuji CircuitBreakerTest
+- domain/engine/StockSplit.kt | terapkan split/reverse split ke Kepemilikan (nilai total tetap) | memakai Kepemilikan dari Portofolio.kt; diuji StockSplitTest
+- domain/engine/DividenCumEx.kt | kelayakan dividen dari bulanBeli/bulanCum/bulanJual (granularitas bulanan) | berdiri sendiri; diuji DividenCumExTest
+- domain/engine/SpreadBidAsk.kt | harga beli (ask) & jual (bid) dari harga tengah + spreadPct (half-spread) | berdiri sendiri; diuji SpreadBidAskTest
+- domain/engine/Obligasi.kt | kupon tahunan/per periode, current yield sederhana | berdiri sendiri; diuji ObligasiTest; nanti tambah YTM aproksimasi (M-059)
