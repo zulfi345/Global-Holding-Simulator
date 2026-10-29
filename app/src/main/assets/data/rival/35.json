@@ -8,9 +8,9 @@
  "tanggal_data": "2026-10",
  "perkiraan": true,
  "kapitalisasi_usd_miliar": null,
- "pendapatan_usd_miliar": null,
+ "pendapatan_usd_miliar": 125.0,
  "margin_bersih_pct": null,
  "utang_usd_miliar": null,
  "sumber_kapitalisasi": "",
- "catatan_angka": ""
+ "catatan_angka": "perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; tertutup: valuasi = pendapatan x multiple sektor; margin & utang kosong"
 }

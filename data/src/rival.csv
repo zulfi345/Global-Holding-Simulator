@@ -29,33 +29,33 @@ id,nama,sektor,negara,status,arketipe_utama,tanggal_data,perkiraan,kapitalisasi_
 28,McDonald's,restoran cepat saji,US,publik,ritel_jasa,2026-10,true,,26,31,40,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
 29,A.P. Møller-Maersk,pelayaran & logistik,DK,publik,logistik,2026-10,true,,55,8,25,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
 30,Johnson & Johnson,kesehatan & farmasi,US,publik,manufaktur,2026-10,true,,90,28,40,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui"
-31,Novo Nordisk,farmasi,DK,publik,manufaktur,2026-10,true,,,,,,
-32,Siemens,industri & otomasi,DE,publik,manufaktur,2026-10,true,,,,,,
-33,LVMH,barang mewah,FR,publik,ritel_jasa,2026-10,true,,,,,,
-34,Cargill,agribisnis & komoditas,US,tertutup,pertanian,2026-10,true,,,,,,
-35,Koch Industries,konglomerasi industri,US,tertutup,manufaktur,2026-10,true,,,,,,
-36,Bank Central Asia (BCA),perbankan,ID,publik,finansial,2026-10,true,,,,,,
-37,Astra International,otomotif & konglomerasi,ID,publik,manufaktur,2026-10,true,,,,,,
-38,Barito Pacific,petrokimia & energi,ID,publik,manufaktur,2026-10,true,,,,,,
-39,Amman Mineral,tambang tembaga & emas,ID,publik,tambang_energi,2026-10,true,,,,,,
-40,Chandra Asri,petrokimia,ID,publik,manufaktur,2026-10,true,,,,,,
-41,Indofood Sukses Makmur,makanan,ID,publik,manufaktur,2026-10,true,,,,,,
-42,Indofood CBP,makanan kemasan,ID,publik,manufaktur,2026-10,true,,,,,,
-43,Unilever Indonesia,barang konsumsi,ID,publik,manufaktur,2026-10,true,,,,,,
-44,Golden Agri-Resources (Sinar Mas),kelapa sawit,SG,publik,pertanian,2026-10,true,,,,,,
-45,Djarum Group,rokok & konglomerasi,ID,tertutup,manufaktur,2026-10,true,,,,,,
-46,Gudang Garam,rokok,ID,publik,manufaktur,2026-10,true,,,,,,
-47,HM Sampoerna,rokok,ID,publik,manufaktur,2026-10,true,,,,,,
-48,Kalbe Farma,farmasi,ID,publik,manufaktur,2026-10,true,,,,,,
-49,Mayora Indah,makanan & minuman,ID,publik,manufaktur,2026-10,true,,,,,,
-50,Wings Group,barang konsumsi,ID,tertutup,manufaktur,2026-10,true,,,,,,
-51,Alamtri Resources (ex-Adaro),batu bara & energi,ID,publik,tambang_energi,2026-10,true,,,,,,
-52,Medco Energi,minyak gas & listrik,ID,publik,tambang_energi,2026-10,true,,,,,,
-53,Bumi Resources,batu bara,ID,publik,tambang_energi,2026-10,true,,,,,,
-54,GoTo,teknologi & fintech,ID,publik,teknologi,2026-10,true,,,,,,
-55,Pakuwon Jati,properti & mal,ID,publik,properti_konstruksi,2026-10,true,,,,,,
-56,Ciputra Development,properti,ID,publik,properti_konstruksi,2026-10,true,,,,,,
-57,Lippo Karawaci,properti & kesehatan,ID,publik,properti_konstruksi,2026-10,true,,,,,,
-58,Charoen Pokphand Indonesia,pakan & unggas,ID,publik,pertanian,2026-10,true,,,,,,
-59,Japfa Comfeed,pakan & unggas,ID,publik,pertanian,2026-10,true,,,,,,
-60,Blue Bird,transportasi taksi,ID,publik,logistik,2026-10,true,,,,,,
+31,Novo Nordisk,farmasi,DK,publik,manufaktur,2026-10,true,,47,31,10,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; DKK dikonversi kasar ke USD"
+32,Siemens,industri & otomasi,DE,publik,manufaktur,2026-10,true,,85,11,60,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; utang termasuk Siemens Financial Services"
+33,LVMH,barang mewah,FR,publik,ritel_jasa,2026-10,true,,88,13,33,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; EUR dikonversi kasar ke USD"
+34,Cargill,agribisnis & komoditas,US,tertutup,pertanian,2026-10,true,,160,2,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; tertutup: valuasi = pendapatan x multiple sektor; margin sangat kasar; utang kosong"
+35,Koch Industries,konglomerasi industri,US,tertutup,manufaktur,2026-10,true,,125,,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; tertutup: valuasi = pendapatan x multiple sektor; margin & utang kosong"
+36,Bank Central Asia (BCA),perbankan,ID,publik,finansial,2026-10,true,,6.2,48,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; bank: pendapatan = bunga+fee, kurs ~17.900 IDR/USD; utang kosong (simpanan nasabah bukan utang)"
+37,Astra International,otomotif & konglomerasi,ID,publik,manufaktur,2026-10,true,,18.4,10,5.5,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang termasuk pembiayaan (Astra Financial)"
+38,Barito Pacific,petrokimia & energi,ID,publik,manufaktur,2026-10,true,,3.0,1,3.5,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; konsolidasi Chandra Asri+Star Energy; margin sangat kasar"
+39,Amman Mineral,tambang tembaga & emas,ID,publik,tambang_energi,2026-10,true,,2.0,,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; margin & utang kosong"
+40,Chandra Asri,petrokimia,ID,publik,manufaktur,2026-10,true,,2.2,-2,2.0,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; margin sangat kasar (petrokimia siklus rendah)"
+41,Indofood Sukses Makmur,makanan,ID,publik,manufaktur,2026-10,true,,6.7,8,3.0,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD"
+42,Indofood CBP,makanan kemasan,ID,publik,manufaktur,2026-10,true,,3.9,11,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"
+43,Unilever Indonesia,barang konsumsi,ID,publik,manufaktur,2026-10,true,,1.95,9,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"
+44,Golden Agri-Resources (Sinar Mas),kelapa sawit,SG,publik,pertanian,2026-10,true,,9.5,5,2.0,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; utang bruto kasar"
+45,Djarum Group,rokok & konglomerasi,ID,tertutup,manufaktur,2026-10,true,,5.0,,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; tertutup: valuasi = pendapatan x multiple sektor; pendapatan sangat kasar (termasuk cukai); margin & utang kosong"
+46,Gudang Garam,rokok,ID,publik,manufaktur,2026-10,true,,5.2,2,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; margin sangat kasar (tipis); utang kosong"
+47,HM Sampoerna,rokok,ID,publik,manufaktur,2026-10,true,,6.1,6,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"
+48,Kalbe Farma,farmasi,ID,publik,manufaktur,2026-10,true,,1.7,10,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"
+49,Mayora Indah,makanan & minuman,ID,publik,manufaktur,2026-10,true,,2.1,8,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"
+50,Wings Group,barang konsumsi,ID,tertutup,manufaktur,2026-10,true,,1.5,,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; tertutup: valuasi = pendapatan x multiple sektor; pendapatan sangat kasar; margin & utang kosong"
+51,Alamtri Resources (ex-Adaro),batu bara & energi,ID,publik,tambang_energi,2026-10,true,,4.0,15,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; margin kasar (harga batu bara berubah-ubah); utang kosong"
+52,Medco Energi,minyak gas & listrik,ID,publik,tambang_energi,2026-10,true,,2.2,5,3.0,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; utang bruto kasar"
+53,Bumi Resources,batu bara,ID,publik,tambang_energi,2026-10,true,,1.1,,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; margin & utang kosong"
+54,GoTo,teknologi & fintech,ID,publik,teknologi,2026-10,true,,0.3,,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; pendapatan = pendapatan bersih, bukan nilai transaksi (GTV); margin & utang kosong"
+55,Pakuwon Jati,properti & mal,ID,publik,properti_konstruksi,2026-10,true,,0.42,38,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; margin kasar, kemungkinan termasuk laba non-operasional; utang kosong"
+56,Ciputra Development,properti,ID,publik,properti_konstruksi,2026-10,true,,0.67,15,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"
+57,Lippo Karawaci,properti & kesehatan,ID,publik,properti_konstruksi,2026-10,true,,0.8,,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; margin & utang kosong"
+58,Charoen Pokphand Indonesia,pakan & unggas,ID,publik,pertanian,2026-10,true,,3.9,6,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"
+59,Japfa Comfeed,pakan & unggas,ID,publik,pertanian,2026-10,true,,3.1,4,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"
+60,Blue Bird,transportasi taksi,ID,publik,logistik,2026-10,true,,0.28,10,,,"perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; IDR ~17.900/USD; utang kosong"

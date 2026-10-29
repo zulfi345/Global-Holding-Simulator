@@ -8,9 +8,9 @@
  "tanggal_data": "2026-10",
  "perkiraan": true,
  "kapitalisasi_usd_miliar": null,
- "pendapatan_usd_miliar": null,
- "margin_bersih_pct": null,
+ "pendapatan_usd_miliar": 6.2,
+ "margin_bersih_pct": 48.0,
  "utang_usd_miliar": null,
  "sumber_kapitalisasi": "",
- "catatan_angka": ""
+ "catatan_angka": "perkiraan kasar dari pengetahuan model (tahun fiskal terakhir yang diketahui), belum diverifikasi; kosong = belum diketahui; bank: pendapatan = bunga+fee, kurs ~17.900 IDR/USD; utang kosong (simpanan nasabah bukan utang)"
 }

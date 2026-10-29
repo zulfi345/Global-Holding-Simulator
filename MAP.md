@@ -9,8 +9,12 @@
 - data/Negara.kt | model data negara + dariJson | dipakai NegaraLoader, nanti engine pajak/kurs/makro
 - data/NegaraLoader.kt | baca assets/data/negara/*.json | memakai Negara.kt; dipanggil dari ui/
 - ui/TemaGame.kt | tema gelap teal+mint | membungkus semua layar
-- ui/RankingPdbScreen.kt | daftar negara urut PDB | memakai data/Negara; dipanggil MainActivity
-- MainActivity.kt | memuat negara via NegaraLoader lalu tampilkan RankingPdbScreen
+- ui/RankingPdbScreen.kt | daftar negara urut PDB; sentuh baris -> RincianNegaraScreen (state dipilih lokal) | memakai data/Negara; dipanggil MainActivity
+- ui/RincianNegaraScreen.kt | rincian 1 negara: PDB, pertumbuhan, populasi, PDB per kapita (pdbPerKapitaUsd internal), inflasi, bunga, kurs, PPh badan, PPN, pajak dividen, upah min; BackHandler | memakai data/Negara; dipanggil RankingPdbScreen
+- ui/RankingRivalScreen.kt | daftar rival urut nilai (ValuasiRival), sumber nilai, tanda tertutup | memakai data/Rival, domain/rival/ValuasiRival; dipanggil MainActivity; sentuh baris -> RincianRivalScreen (state dipilih di dalam layar; teksNilai/teksSumber internal)
+- ui/RincianRivalScreen.kt | rincian 1 rival: asal nilai (kapitalisasi/pendapatan x multiple), pendapatan, margin, laba, utang, utang/nilai, catatan_angka; BackHandler | memakai Rival, ValuasiRival, AiRival.rasioUtangTerhadapNilai; dipanggil RankingRivalScreen
+- ui/DashboardScreen.kt | kartu valuasi/kas/pendapatan/laba bulanan + peringatan risiko dari Holding; formatRupiahSingkat & teksPeringatan internal | memakai domain/holding/Holding; tab pertama MainActivity
+- MainActivity.kt | Scaffold + NavigationBar 3 tab (Dashboard: DashboardScreen dengan Holding.mulai contoh 40 miliar sementara; Negara: RankingPdbScreen; Rival: RankingRivalScreen), data via NegaraLoader/RivalLoader
 - domain/engine/MakroState.kt | state makro per negara | memakai data/Negara; dipakai MakroEngine
 - domain/engine/MakroEngine.kt | tick bulanan makro | memakai MakroState; diuji MakroEngineTest
 - test/.../MakroEngineTest.kt | uji deterministik, batas, mean reversion | memakai MakroEngine
@@ -46,6 +50,14 @@
 - tools/gen_aset.py | CSV->JSON aset + validasi | memakai data/src/aset.csv
 - data/Aset.kt | model data aset + dariJson | dipakai AsetLoader, nanti domain/engine/HargaAset & Investasi
 - data/AsetLoader.kt | baca assets/data/aset/*.json | memakai Aset.kt; nanti dipanggil dari ui/
+- data/Rival.kt | model rival + dariJson (angka keuangan Double? null=belum diketahui; tertutup, labaBersihUsdMiliar) | dipakai RivalLoader, nanti mesin valuasi/AI/akuisisi di domain/rival
+- data/RivalLoader.kt | baca assets/data/rival/*.json | memakai Rival.kt; nanti dipanggil dari ui/
+- domain/rival/ValuasiRival.kt | nilai rival (kapitalisasi, jika null pendapatan x multiple arketipe; null bila tak ada data), NilaiRival+SumberNilai | memakai data/Rival; diuji ValuasiRivalTest; nanti dipakai AI rival & akuisisi
+- domain/rival/AiRival.kt | KeputusanRival (EKSPANSI/TAHAN/BERTAHAN) dari margin & utang/nilai, ambang digeser seed | memakai data/Rival, ValuasiRival; diuji AiRivalTest; nanti dipakai Akuisisi & loop bulanan
+- domain/rival/Akuisisi.kt | hargaBeliRival, pemainBeliRival (HasilAkuisisi), tawaranRival (TawaranRival) | memakai Rival, ValuasiRival, AiRival; diuji AkuisisiTest; nanti dipanggil dari ui/loop game
+- domain/rival/SimulasiRival.kt | StateRival, awal, tickBulan (tumbuh menurut AiRival + jitter seed), akuisisiAntarRival (HasilAkuisisiRival) | memakai Rival, ValuasiRival, AiRival, Akuisisi; diuji SimulasiRivalTest; nanti dipanggil loop game
+- domain/rival/DaftarRival.kt | awalSemua, peringkat, tickSemua (tick semua rival + 1 akuisisi/pembeli EKSPANSI per bulan) -> HasilBulanRival | memakai SimulasiRival, AiRival; diuji DaftarRivalTest; nanti dipanggil loop game & layar rival (F11)
+- domain/holding/Holding.kt | ModalAwal (20/40/60/80/100 miliar), PosisiUsaha, Holding (kas, utang, investasi, usaha; valuasi, pendapatan/laba bulanan, peringatan() -> PeringatanHolding), Holding.mulai | Rupiah; belum menyentuh Neraca/LabaRugi/Portofolio; diuji HoldingTest; nanti dashboard (ui)
 - domain/engine/HargaAset.kt | tick harga bulanan aset (mean reversion + guncangan dari volatilitasTahunanPct) | dipakai nanti domain/engine/Portofolio.kt (mark-to-market); diuji HargaAsetTest
 - domain/engine/Investasi.kt | beli/jual generik (HasilTransaksiAset: lot, biaya broker, pajak transaksi) | memakai Aset.ukuranLot; dipakai domain/engine/Portofolio.kt; diuji InvestasiTest
 - domain/engine/Portofolio.kt | Kepemilikan per aset, unit Double (average cost, laba/rugi belum terealisasi, varian kripto) | memakai HasilTransaksiAset dari Investasi.kt; dipakai domain/engine/ImbalAset.kt; diuji PortofolioTest
@@ -67,5 +79,5 @@
 - domain/engine/KreditValas.kt | pinjaman USD: dana/cicilan rupiah, selisih kurs | memakai Kredit.kt; kurs dari MakroState.kursPerUsd (KursEngine); diuji KreditValasTest
 - domain/engine/Covenant.kt | cek syarat pinjaman (DER/coverage/CR), akibat, kenaikan bunga | memakai rasio PremiRisiko; diuji CovenantTest
 - domain/engine/Pendanaan.kt | ringkasan utang: total, beban bunga, bunga rata-rata, jatuh tempo | berdiri sendiri; hasil untuk Neraca.utangBank & LaporanLabaRugi.biayaBunga; diuji PendanaanTest
-- data/src/rival.csv | identitas + angka keuangan (opsional) 60 rival swasta (Lampiran B) | -> tools/gen_rival.py -> assets/data/rival/<id>.json; angka terisi bertahap M-075..078
+- data/src/rival.csv | identitas + angka keuangan (opsional) 60 rival swasta (Lampiran B) | -> tools/gen_rival.py -> assets/data/rival/<id>.json; angka terisi bertahap M-075..078 (semua 60 terisi s/d M-078)
 - tools/gen_rival.py | CSV->JSON rival + validasi | memakai data/src/rival.csv & negara.csv
