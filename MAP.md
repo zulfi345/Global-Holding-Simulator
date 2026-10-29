@@ -13,8 +13,17 @@
 - ui/RincianNegaraScreen.kt | rincian 1 negara: PDB, pertumbuhan, populasi, PDB per kapita (pdbPerKapitaUsd internal), inflasi, bunga, kurs, PPh badan, PPN, pajak dividen, upah min; BackHandler | memakai data/Negara; dipanggil RankingPdbScreen
 - ui/RankingRivalScreen.kt | daftar rival urut nilai (ValuasiRival), sumber nilai, tanda tertutup | memakai data/Rival, domain/rival/ValuasiRival; dipanggil MainActivity; sentuh baris -> RincianRivalScreen (state dipilih di dalam layar; teksNilai/teksSumber internal)
 - ui/RincianRivalScreen.kt | rincian 1 rival: asal nilai (kapitalisasi/pendapatan x multiple), pendapatan, margin, laba, utang, utang/nilai, catatan_angka; BackHandler | memakai Rival, ValuasiRival, AiRival.rasioUtangTerhadapNilai; dipanggil RankingRivalScreen
-- ui/DashboardScreen.kt | kartu valuasi/kas/pendapatan/laba bulanan + peringatan risiko dari Holding; formatRupiahSingkat & teksPeringatan internal | memakai domain/holding/Holding; tab pertama MainActivity
-- MainActivity.kt | Scaffold + NavigationBar 3 tab (Dashboard: DashboardScreen dengan Holding.mulai contoh 40 miliar sementara; Negara: RankingPdbScreen; Rival: RankingRivalScreen), data via NegaraLoader/RivalLoader
+- ui/DashboardScreen.kt | tombol mulai ulang + kartu valuasi/kas/pendapatan/laba bulanan + peringatan risiko dari Holding; formatRupiahSingkat & teksPeringatan internal | memakai domain/holding/Holding; tab pertama MainActivity
+- ui/PilihModalScreen.kt | layar awal: nama, negara basis (dropdown), modal 5 pilihan -> Holding.mulai; namaHoldingValid & negaraBasisAwal internal | memakai data/Negara, domain/holding/Holding; dipanggil MainActivity; diuji PilihModalTest
+- ui/BeritaRival.kt | teksAkuisisi (A membeli B, harga) | memakai Rival, HasilAkuisisiRival; dipanggil MainActivity -> Dashboard; diuji BeritaRivalTest
+- ui/GrafikValuasi.kt | grafik garis riwayat valuasi (Canvas, titikGrafik internal) | dipakai DashboardScreen; diuji GrafikValuasiTest
+- domain/holding/JualUsaha.kt | jual usaha milik: kas += nilai x (1-2%), hapus posisi (sementara) | memakai Holding; dipanggil UsahaScreen via MainActivity; diuji JualUsahaTest
+- ui/RincianUsahaScreen.kt | rincian usaha milik + tombol jual; BackHandler | memakai Usaha, PosisiUsaha, JualUsaha; dipanggil UsahaScreen
+- domain/holding/LanjutBulan.kt | maju 1 bulan: bulan+1, kas += laba usaha - PPh badan (rugi fiskal dibawa; sementara) | memakai Holding, PajakEngine; dipanggil tombol Dashboard; diuji LanjutBulanTest
+- domain/holding/BeliUsaha.kt | beli usaha dari kas -> PosisiUsaha (harga modalMinUsd x kurs sementara; pendapatan/laba perkiraan sementara) | memakai data/Usaha, Holding; diuji BeliUsahaTest
+- ui/UsahaScreen.kt | daftar 60 usaha + tombol Beli (susunUsaha internal) | memakai Usaha, BeliUsaha, formatRupiahSingkat; tab ke-4 MainActivity; diuji UsahaScreenTest
+- data/HoldingPenyimpanan.kt | simpan/muat Holding (teks kunci=nilai, SharedPreferences) | memakai domain/holding/Holding; dipanggil MainActivity; diuji HoldingPenyimpananTest
+- MainActivity.kt | holding dimuat dari HoldingPenyimpanan; null -> PilihModalScreen; sesudahnya Scaffold + NavigationBar 4 tab (+Usaha) (Dashboard: DashboardScreen(holding pilihan pemain); Negara: RankingPdbScreen; Rival: RankingRivalScreen), data via NegaraLoader/RivalLoader
 - domain/engine/MakroState.kt | state makro per negara | memakai data/Negara; dipakai MakroEngine
 - domain/engine/MakroEngine.kt | tick bulanan makro | memakai MakroState; diuji MakroEngineTest
 - test/.../MakroEngineTest.kt | uji deterministik, batas, mean reversion | memakai MakroEngine
@@ -56,6 +65,7 @@
 - domain/rival/AiRival.kt | KeputusanRival (EKSPANSI/TAHAN/BERTAHAN) dari margin & utang/nilai, ambang digeser seed | memakai data/Rival, ValuasiRival; diuji AiRivalTest; nanti dipakai Akuisisi & loop bulanan
 - domain/rival/Akuisisi.kt | hargaBeliRival, pemainBeliRival (HasilAkuisisi), tawaranRival (TawaranRival) | memakai Rival, ValuasiRival, AiRival; diuji AkuisisiTest; nanti dipanggil dari ui/loop game
 - domain/rival/SimulasiRival.kt | StateRival, awal, tickBulan (tumbuh menurut AiRival + jitter seed), akuisisiAntarRival (HasilAkuisisiRival) | memakai Rival, ValuasiRival, AiRival, Akuisisi; diuji SimulasiRivalTest; nanti dipanggil loop game
+- domain/rival/DuniaRival.kt | state seluruh rival bulan ke-N dihitung deterministik dari awal (seed 2026), akuisisiBulan | memakai DaftarRival; dipanggil RankingRivalScreen; diuji DuniaRivalTest
 - domain/rival/DaftarRival.kt | awalSemua, peringkat, tickSemua (tick semua rival + 1 akuisisi/pembeli EKSPANSI per bulan) -> HasilBulanRival | memakai SimulasiRival, AiRival; diuji DaftarRivalTest; nanti dipanggil loop game & layar rival (F11)
 - domain/holding/Holding.kt | ModalAwal (20/40/60/80/100 miliar), PosisiUsaha, Holding (kas, utang, investasi, usaha; valuasi, pendapatan/laba bulanan, peringatan() -> PeringatanHolding), Holding.mulai | Rupiah; belum menyentuh Neraca/LabaRugi/Portofolio; diuji HoldingTest; nanti dashboard (ui)
 - domain/engine/HargaAset.kt | tick harga bulanan aset (mean reversion + guncangan dari volatilitasTahunanPct) | dipakai nanti domain/engine/Portofolio.kt (mark-to-market); diuji HargaAsetTest

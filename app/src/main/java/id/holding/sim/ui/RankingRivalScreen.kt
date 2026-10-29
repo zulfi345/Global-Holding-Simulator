@@ -22,22 +22,32 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import id.holding.sim.data.Rival
+import id.holding.sim.domain.rival.DuniaRival
 import id.holding.sim.domain.rival.NilaiRival
+import id.holding.sim.domain.rival.StateRival
 import id.holding.sim.domain.rival.SumberNilai
 import id.holding.sim.domain.rival.ValuasiRival
 import java.util.Locale
 
 private val LokalID: Locale = Locale.forLanguageTag("id-ID")
 
-private class BarisRival(val rival: Rival, val nilai: NilaiRival?)
+private class BarisRival(val rival: Rival, val nilai: NilaiRival?, val diakuisisi: Boolean = false)
 
 /** Rival bernilai diurutkan nilai terbesar dulu; yang datanya kosong di bawah (urut id). */
-private fun susun(rivals: List<Rival>): List<BarisRival> {
-    val semua = rivals.map { BarisRival(it, ValuasiRival.nilai(it)) }
-    val ada = semua.filter { it.nilai != null }
+private fun susun(rivals: List<Rival>, states: List<StateRival> = emptyList()): List<BarisRival> {
+    val peta = states.associateBy { it.rivalId }
+    val semua = rivals.map { r ->
+        val dasar = ValuasiRival.nilai(r)
+        val st = peta[r.id]
+        if (st == null || dasar == null) BarisRival(r, dasar)
+        else BarisRival(r, NilaiRival(st.nilaiUsdMiliar, dasar.sumber), diakuisisi = !st.aktif)
+    }
+    val aktif = semua.filter { !it.diakuisisi }
+    val ada = aktif.filter { it.nilai != null }
         .sortedWith(compareByDescending<BarisRival> { it.nilai!!.nilaiUsdMiliar }.thenBy { it.rival.id })
-    val kosong = semua.filter { it.nilai == null }.sortedBy { it.rival.id }
-    return ada + kosong
+    val kosong = aktif.filter { it.nilai == null }.sortedBy { it.rival.id }
+    val dibeli = semua.filter { it.diakuisisi }.sortedBy { it.rival.id }
+    return ada + kosong + dibeli
 }
 
 internal fun teksNilai(n: NilaiRival?): String {
@@ -53,8 +63,8 @@ internal fun teksSumber(n: NilaiRival?): String = when (n?.sumber) {
 }
 
 @Composable
-fun RankingRivalScreen(rivals: List<Rival>) {
-    val baris = remember(rivals) { susun(rivals) }
+fun RankingRivalScreen(rivals: List<Rival>, bulan: Int = 0) {
+    val baris = remember(rivals, bulan) { susun(rivals, DuniaRival.stateSetelah(rivals, bulan)) }
     var dipilih by remember { mutableStateOf<Rival?>(null) }
     val terpilih = dipilih
     if (terpilih != null) {
@@ -62,7 +72,7 @@ fun RankingRivalScreen(rivals: List<Rival>) {
     } else {
         Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
             Text("Peringkat Rival", style = MaterialTheme.typography.titleLarge)
-            Text("Nilai perkiraan 2026, US$ miliar. Sentuh baris untuk rincian.", style = MaterialTheme.typography.bodySmall)
+            Text("Bulan ke-" + bulan + ", US$ miliar. Sentuh baris untuk rincian.", style = MaterialTheme.typography.bodySmall)
             Spacer(modifier = Modifier.height(12.dp))
             LazyColumn {
                 itemsIndexed(baris) { i, b -> BarisRivalItem(i + 1, b, onKlik = { dipilih = b.rival }) }
@@ -74,7 +84,7 @@ fun RankingRivalScreen(rivals: List<Rival>) {
 @Composable
 private fun BarisRivalItem(peringkat: Int, b: BarisRival, onKlik: () -> Unit) {
     val r = b.rival
-    val tertutup = if (r.tertutup) " \u00B7 tertutup" else ""
+    val tertutup = (if (r.tertutup) " \u00B7 tertutup" else "") + (if (b.diakuisisi) " \u00B7 diakuisisi" else "")
     Row(
         modifier = Modifier.fillMaxWidth().clickable(onClick = onKlik).padding(vertical = 8.dp),
         horizontalArrangement = Arrangement.SpaceBetween,

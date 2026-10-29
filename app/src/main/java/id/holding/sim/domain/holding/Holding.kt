@@ -33,7 +33,11 @@ data class Holding(
     val utangRupiah: Double = 0.0,
     val nilaiInvestasiRupiah: Double = 0.0,
     val usaha: List<PosisiUsaha> = emptyList(),
-    val bulan: Int = 0
+    val bulan: Int = 0,
+    /** Valuasi akhir tiap bulan (indeks 0 = awal); dibatasi RIWAYAT_MAKS terakhir. */
+    val riwayatValuasiRupiah: List<Double> = emptyList(),
+    /** Rugi fiskal yang boleh mengurangi laba kena pajak bulan berikutnya (PajakEngine). */
+    val rugiFiskalRupiah: Double = 0.0
 ) {
     val nilaiUsahaRupiah: Double get() = usaha.sumOf { it.nilaiRupiah }
     val totalAsetRupiah: Double get() = kasRupiah + nilaiInvestasiRupiah + nilaiUsahaRupiah
@@ -54,11 +58,12 @@ data class Holding(
     companion object {
         const val BATAS_KAS_TIPIS = 0.05
         const val BATAS_UTANG_TINGGI = 0.6
+        const val RIWAYAT_MAKS = 600
 
         /** Holding baru: seluruh modal awal menjadi kas, belum ada usaha/utang. */
         fun mulai(nama: String, negaraBasis: String, modalMiliar: Int): Holding {
             val modal = ModalAwal.rupiah(modalMiliar)
-            return Holding(nama, negaraBasis, modal, modal)
+            return Holding(nama, negaraBasis, modal, modal, riwayatValuasiRupiah = listOf(modal))
         }
     }
 }

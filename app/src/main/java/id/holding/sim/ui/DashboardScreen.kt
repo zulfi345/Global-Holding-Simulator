@@ -8,8 +8,10 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -39,7 +41,12 @@ internal fun teksPeringatan(p: PeringatanHolding): String = when (p) {
 }
 
 @Composable
-fun DashboardScreen(holding: Holding) {
+fun DashboardScreen(
+    holding: Holding,
+    berita: List<String> = emptyList(),
+    onLanjutBulan: () -> Unit = {},
+    onMulaiUlang: () -> Unit = {}
+) {
     val peringatan = holding.peringatan()
     Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
         Text(holding.nama, style = MaterialTheme.typography.titleLarge)
@@ -48,7 +55,13 @@ fun DashboardScreen(holding: Holding) {
             style = MaterialTheme.typography.bodySmall
         )
         Spacer(modifier = Modifier.height(12.dp))
+        Button(onClick = onLanjutBulan, modifier = Modifier.fillMaxWidth()) {
+            Text("Lanjut 1 bulan")
+        }
+        Spacer(modifier = Modifier.height(8.dp))
         KartuAngka("Valuasi holding", formatRupiahSingkat(holding.valuasiRupiah))
+        Text("Riwayat valuasi (" + holding.riwayatValuasiRupiah.size + " titik)", style = MaterialTheme.typography.bodySmall)
+        GrafikValuasi(holding.riwayatValuasiRupiah)
         KartuAngka("Kas", formatRupiahSingkat(holding.kasRupiah))
         KartuAngka("Pendapatan bulanan", formatRupiahSingkat(holding.pendapatanBulananRupiah))
         KartuAngka("Laba bersih bulanan", formatRupiahSingkat(holding.labaBersihBulananRupiah))
@@ -64,6 +77,17 @@ fun DashboardScreen(holding: Holding) {
                     color = MaterialTheme.colorScheme.error
                 )
             }
+        }
+        Spacer(modifier = Modifier.height(12.dp))
+        Text("Berita rival bulan ini", style = MaterialTheme.typography.titleMedium)
+        if (berita.isEmpty()) {
+            Text("Tidak ada akuisisi antar rival.", style = MaterialTheme.typography.bodyMedium)
+        } else {
+            for (b in berita) Text(b, style = MaterialTheme.typography.bodyMedium)
+        }
+        Spacer(modifier = Modifier.height(24.dp))
+        OutlinedButton(onClick = onMulaiUlang, modifier = Modifier.fillMaxWidth()) {
+            Text("Mulai ulang holding")
         }
     }
 }
