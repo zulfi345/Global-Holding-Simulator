@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import id.holding.sim.domain.holding.Holding
 import id.holding.sim.domain.holding.PeringatanHolding
+import id.holding.sim.domain.holding.TanggalGame
 import java.util.Locale
 
 private val LokalDashboard: Locale = Locale.forLanguageTag("id-ID")
@@ -44,6 +45,11 @@ internal fun teksPeringatan(p: PeringatanHolding): String = when (p) {
 fun DashboardScreen(
     holding: Holding,
     berita: List<String> = emptyList(),
+    kecepatan: KecepatanJam = KecepatanJam.JEDA,
+    onUbahKecepatan: () -> Unit = {},
+    bungaPinjamPct: Double = 0.0,
+    onPinjam: () -> Unit = {},
+    onLunasi: () -> Unit = {},
     onLanjutBulan: () -> Unit = {},
     onMulaiUlang: () -> Unit = {}
 ) {
@@ -51,11 +57,14 @@ fun DashboardScreen(
     Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
         Text(holding.nama, style = MaterialTheme.typography.titleLarge)
         Text(
-            holding.negaraBasis + " \u00B7 bulan ke-" + holding.bulan,
+            TanggalGame.teks(holding.bulan) + " \u00B7 " + holding.negaraBasis + " \u00B7 bulan ke-" + holding.bulan,
             style = MaterialTheme.typography.bodySmall
         )
         Spacer(modifier = Modifier.height(12.dp))
-        Button(onClick = onLanjutBulan, modifier = Modifier.fillMaxWidth()) {
+        Button(onClick = onUbahKecepatan, modifier = Modifier.fillMaxWidth()) {
+            Text("Jam game: " + kecepatan.label + " (ketuk untuk ganti)")
+        }
+        OutlinedButton(onClick = onLanjutBulan, modifier = Modifier.fillMaxWidth()) {
             Text("Lanjut 1 bulan")
         }
         Spacer(modifier = Modifier.height(8.dp))
@@ -65,6 +74,18 @@ fun DashboardScreen(
         KartuAngka("Kas", formatRupiahSingkat(holding.kasRupiah))
         KartuAngka("Pendapatan bulanan", formatRupiahSingkat(holding.pendapatanBulananRupiah))
         KartuAngka("Laba bersih bulanan", formatRupiahSingkat(holding.labaBersihBulananRupiah))
+        KartuAngka("Utang holding", formatRupiahSingkat(holding.utangRupiah))
+        Text(
+            "Bunga utang " + String.format(LokalDashboard, "%.1f", holding.bungaUtangPct) + "% per tahun (beban " +
+                formatRupiahSingkat(holding.bebanBungaBulananRupiah) + " per bulan)",
+            style = MaterialTheme.typography.bodySmall
+        )
+        Button(onClick = onPinjam, modifier = Modifier.fillMaxWidth()) {
+            Text("Pinjam Rp1 miliar (bunga " + String.format(LokalDashboard, "%.1f", bungaPinjamPct) + "%)")
+        }
+        OutlinedButton(onClick = onLunasi, modifier = Modifier.fillMaxWidth()) {
+            Text("Lunasi Rp1 miliar")
+        }
         Spacer(modifier = Modifier.height(12.dp))
         Text("Peringatan risiko", style = MaterialTheme.typography.titleMedium)
         if (peringatan.isEmpty()) {

@@ -33,7 +33,8 @@ object HoldingPenyimpanan {
             "bulan=${h.bulan}",
             "usaha=$usaha",
             "riwayat=${h.riwayatValuasiRupiah.joinToString(";")}",
-            "rugi=${h.rugiFiskalRupiah}"
+            "rugi=${h.rugiFiskalRupiah}",
+            "bunga=${h.bungaUtangPct}"
         ).joinToString("\n")
     }
 
@@ -68,7 +69,8 @@ object HoldingPenyimpanan {
                 usaha = usaha,
                 bulan = (peta["bulan"] ?: return null).toInt(),
                 riwayatValuasiRupiah = riwayat,
-                rugiFiskalRupiah = (peta["rugi"] ?: "0.0").toDouble()
+                rugiFiskalRupiah = (peta["rugi"] ?: "0.0").toDouble(),
+                bungaUtangPct = (peta["bunga"] ?: "0.0").toDouble()
             )
         } catch (e: Exception) {
             null

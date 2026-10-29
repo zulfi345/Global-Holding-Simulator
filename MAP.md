@@ -19,7 +19,15 @@
 - ui/GrafikValuasi.kt | grafik garis riwayat valuasi (Canvas, titikGrafik internal) | dipakai DashboardScreen; diuji GrafikValuasiTest
 - domain/holding/JualUsaha.kt | jual usaha milik: kas += nilai x (1-2%), hapus posisi (sementara) | memakai Holding; dipanggil UsahaScreen via MainActivity; diuji JualUsahaTest
 - ui/RincianUsahaScreen.kt | rincian usaha milik + tombol jual; BackHandler | memakai Usaha, PosisiUsaha, JualUsaha; dipanggil UsahaScreen
-- domain/holding/LanjutBulan.kt | maju 1 bulan: bulan+1, kas += laba usaha - PPh badan (rugi fiskal dibawa; sementara) | memakai Holding, PajakEngine; dipanggil tombol Dashboard; diuji LanjutBulanTest
+- domain/holding/TanggalGame.kt | Jan 2026 + bulan -> teks | dipakai Dashboard & ticker; diuji TanggalGameTest
+- assets/peta/world-map.jpg | peta dunia 2576x1288 equirectangular | dimuat PetaScreen via BitmapFactory
+- data/KoordinatNegara.kt | lintang/bujur 100 negara (ibu kota) | dipakai PetaScreen; diuji KoordinatNegaraTest
+- ui/PetaMath.kt | proyeksi, batas, zoom/pan, pusatkan | dipakai PetaScreen; diuji PetaMathTest
+- ui/PetaScreen.kt | peta interaktif + titik negara + chip + zoom; ketuk titik -> RincianNegaraScreen | memakai Negara, KoordinatNegara, PetaMath; tab Peta MainActivity
+- ui/JamGame.kt | enum KecepatanJam (jeda per bulan game) | dipakai MainActivity (LaunchedEffect) & Dashboard; diuji JamGameTest
+- ui/TickerPasar.kt | teksTicker + TickerPasar (baris berganti) | memakai Negara, Holding, TanggalGame, formatRupiahSingkat; dipanggil MainActivity di atas tab; diuji TickerPasarTest
+- domain/holding/Pinjam.kt | pinjam (bunga rata-rata tertimbang) & lunasi utang holding | memakai Holding; dipanggil Dashboard via MainActivity (bunga = Kredit.bungaPinjamanPct acuan+3 sementara); diuji PinjamTest
+- domain/holding/LanjutBulan.kt | maju 1 bulan: bulan+1, kas += laba usaha - bunga utang holding - PPh badan (rugi fiskal dibawa; sementara) | memakai Holding, PajakEngine; dipanggil tombol Dashboard; diuji LanjutBulanTest
 - domain/holding/BeliUsaha.kt | beli usaha dari kas -> PosisiUsaha (harga modalMinUsd x kurs sementara; pendapatan/laba perkiraan sementara) | memakai data/Usaha, Holding; diuji BeliUsahaTest
 - ui/UsahaScreen.kt | daftar 60 usaha + tombol Beli (susunUsaha internal) | memakai Usaha, BeliUsaha, formatRupiahSingkat; tab ke-4 MainActivity; diuji UsahaScreenTest
 - data/HoldingPenyimpanan.kt | simpan/muat Holding (teks kunci=nilai, SharedPreferences) | memakai domain/holding/Holding; dipanggil MainActivity; diuji HoldingPenyimpananTest

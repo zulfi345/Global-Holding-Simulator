@@ -46,4 +46,14 @@ class HoldingPenyimpananTest {
         val h = contoh.copy(rugiFiskalRupiah = 1.5e7)
         assertEquals(h, HoldingPenyimpanan.dariTeks(HoldingPenyimpanan.keTeks(h)))
     }
+
+    @Test fun bungaUtangBolakBalik() {
+        val h = contoh.copy(bungaUtangPct = 9.5)
+        assertEquals(h, HoldingPenyimpanan.dariTeks(HoldingPenyimpanan.keTeks(h)))
+    }
+
+    @Test fun teksLamaTanpaBungaTermuatNol() {
+        val lama = HoldingPenyimpanan.keTeks(contoh).lines().filter { !it.startsWith("bunga=") }.joinToString("\n")
+        assertEquals(0.0, HoldingPenyimpanan.dariTeks(lama)!!.bungaUtangPct, 1e-9)
+    }
 }

@@ -23,7 +23,7 @@ enum class PeringatanHolding { KAS_TIPIS, UTANG_TINGGI, RUGI_BERJALAN, EKUITAS_N
 
 /**
  * Keadaan holding pemain (Rupiah). Valuasi = total aset - utang. Laba bersih bulanan = jumlah laba
- * usaha (belum dikurangi bunga utang tingkat holding). Ambang peringatan = desain game.
+ * usaha (bunga utang holding dihitung terpisah di LanjutBulan). Ambang peringatan = desain game.
  */
 data class Holding(
     val nama: String,
@@ -37,13 +37,18 @@ data class Holding(
     /** Valuasi akhir tiap bulan (indeks 0 = awal); dibatasi RIWAYAT_MAKS terakhir. */
     val riwayatValuasiRupiah: List<Double> = emptyList(),
     /** Rugi fiskal yang boleh mengurangi laba kena pajak bulan berikutnya (PajakEngine). */
-    val rugiFiskalRupiah: Double = 0.0
+    val rugiFiskalRupiah: Double = 0.0,
+    /** Bunga tahunan rata-rata tertimbang atas utang holding (persen); 0 = tanpa bunga. */
+    val bungaUtangPct: Double = 0.0
 ) {
     val nilaiUsahaRupiah: Double get() = usaha.sumOf { it.nilaiRupiah }
     val totalAsetRupiah: Double get() = kasRupiah + nilaiInvestasiRupiah + nilaiUsahaRupiah
     val valuasiRupiah: Double get() = totalAsetRupiah - utangRupiah
     val pendapatanBulananRupiah: Double get() = usaha.sumOf { it.pendapatanBulananRupiah }
     val labaBersihBulananRupiah: Double get() = usaha.sumOf { it.labaBersihBulananRupiah }
+
+    /** Beban bunga utang holding per bulan = utang x bunga% / 100 / 12. */
+    val bebanBungaBulananRupiah: Double get() = utangRupiah * bungaUtangPct / 100.0 / 12.0
 
     fun peringatan(): List<PeringatanHolding> {
         val hasil = ArrayList<PeringatanHolding>()
